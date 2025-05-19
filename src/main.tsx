@@ -9,7 +9,7 @@ import App from "./App.tsx";
 // console.log(extendTheme(Theme).colors);
 const colors = Object.keys(Theme().colors);
 const randomColor = colors[Math.floor(Math.random() * colors.length)];
-// console.log("randomColor", randomColor);
+console.log("randomColor", randomColor);
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Color.Provider value={randomColor}>

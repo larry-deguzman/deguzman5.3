@@ -15,6 +15,14 @@ export default function Theme() {
       "3xl": "1436px",
     },
     colors: {
+      seafoam: {
+        black: "#000000",
+        darkest: "#426E6f",
+        dark: "#346F6F",
+        light: "#DDE9E9",
+        lightest: "#FBFFFF",
+        white: "#FFFFFF",
+      },
       rouge: {
         black: "#000000",
         darkest: "#3D0301",
