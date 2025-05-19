@@ -1,10 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-createRoot(document.getElementById('root')!).render(
+import { Theme } from "./theme/Theme";
+import App from "./App.tsx";
+
+console.log(extendTheme(Theme));
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <ChakraProvider theme={extendTheme(Theme)}>
+      <App />
+    </ChakraProvider>
+  </StrictMode>
+);
