@@ -15,7 +15,12 @@ const UpperNavigation = () => {
   }, []);
 
   return (
-    <Box id="UpperNavigation" m="auto" w="50%" height={"header.height"}>
+    <Box
+      id="UpperNavigation"
+      ml={2}
+      w={[100, 130, 160, 200, 300, 350, 400]}
+      height={"header.height"}
+    >
       <Logomark headerHeight={{ height: "header.height" }} />
     </Box>
   );

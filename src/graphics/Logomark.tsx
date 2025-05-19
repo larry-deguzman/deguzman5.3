@@ -1,17 +1,20 @@
 import { Box } from "@chakra-ui/react";
-import { Theme } from "../theme/Theme";
+
+import { useColorContext } from "../context/Color";
+import Theme from "../theme/Theme";
 
 type Props = {
   headerHeight: { [key: string]: string };
 };
+type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
 export default function Logomark({ headerHeight }: Props) {
-  const { prime } = Theme.colors;
+  const prime = useColorContext() as ColorKey;
   const getFill = () => {
-    return prime.lightest;
+    return Theme().colors[prime].lightest;
   };
   const getOpposite = () => {
-    return prime.dark;
+    return Theme().colors[prime].darkest;
   };
   return (
     <Box height={headerHeight} width="100%">
