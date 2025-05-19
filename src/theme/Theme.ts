@@ -16,6 +16,14 @@ const theme = {
   colors: {
     prime: {
       black: "#000000",
+      darkest: "#537D5D",
+      dark: "#73946B",
+      light: "#9EBC8A",
+      lightest: "#D2D0A0",
+      white: "#FFFFFF",
+    },
+    dark: {
+      black: "#000000",
       darkest: "#222831",
       dark: "#393E46",
       light: "#948979",
@@ -31,6 +39,17 @@ const theme = {
         height: "100%",
         bg: "prime.darkest",
       },
+    },
+  },
+  header: {
+    height: {
+      base: "50px",
+      sm: "60px",
+      md: "70px",
+      lg: "80px",
+      xl: "80px",
+      "2xl": "80px",
+      "3xl": "80px",
     },
   },
 };
