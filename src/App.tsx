@@ -4,6 +4,8 @@ import "./css/Universal.css";
 import { useColorContext } from "./context/Color";
 import Theme from "./theme/Theme";
 import UpperNavigation from "./component/UpperNavigation";
+import Main from "./component/Main";
+import UpperBumper from "./component/UpperBumper";
 
 type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
@@ -27,6 +29,8 @@ function App() {
         w={[325, 416, 546, 694, 894, 1020, 1428]}
       >
         <UpperNavigation />
+        <UpperBumper />
+        <Main />
       </Box>
     </>
   );
