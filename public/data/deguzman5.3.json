@@ -2,26 +2,26 @@
   "cards": [
     {
       "title": "C3D Enterprises",
-      "picture": "",
-      "link": "",
+      "picture": "/images/C3D.jpg",
+      "link": "/main",
       "description": "C3D Enterprises was a company that specialized in work in the music industry. They were known for roster of artists."
     },
     {
       "title": "Yahoo!",
-      "picture": "",
-      "link": "",
+      "picture": "/images/C3D.jpg",
+      "link": "/main",
       "description": "Yahoo! was a web services provider that offered a variety of services, including search, email, and news. They were known for their web portal and search engine."
     },
     {
       "title": "Personal Music",
-      "picture": "",
-      "link": "",
+      "picture": "/images/C3D.jpg",
+      "link": "/main",
       "description": "This is a collection of personal music that I have created over the years. It includes a variety of genres and styles, showcasing my growth as a musician."
     },
     {
       "title": "Videos",
-      "picture": "",
-      "link": "",
+      "picture": "/images/C3D.jpg",
+      "link": "/main",
       "description": "This is a collection of videos that I have created over the years. It includes a variety of genres and styles, showcasing my growth."
     }
   ]

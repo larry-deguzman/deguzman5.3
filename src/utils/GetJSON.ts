@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { Deguzman53 } from "../types/Deguzman53";
+import type { Deguzman53 } from "../types/GenericTypes";
 
 type Props = {
   url?: string;

@@ -1,4 +1,6 @@
 import { Box } from "@chakra-ui/react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+
 import "./css/Universal.css";
 
 import { useColorContext } from "./context/Color";
@@ -8,6 +10,9 @@ import UpperNavigation from "./component/UpperNavigation";
 import Main from "./component/Main";
 import UpperBumper from "./component/UpperBumper";
 import Footer from "./component/Footer";
+
+import UpdatePage from "./component/UpdatePage";
+import type { UpdatePageProps } from "./types/GenericTypes";
 
 type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
@@ -22,6 +27,11 @@ function App() {
 
   const data = useGetJSON({});
   // console.log("data", data);
+  const navigate = useNavigate();
+  const callbackFromMain = (info: UpdatePageProps) => {
+    // console.log("callbackFromApp", info);
+    navigate("/updatePage", { state: info });
+  };
 
   return (
     <>
@@ -36,7 +46,13 @@ function App() {
       >
         <UpperNavigation />
         <UpperBumper />
-        <Main data={data} />
+        <Routes>
+          <Route
+            path="/"
+            element={<Main data={data} callback={callbackFromMain} />}
+          />
+          <Route path="/updatePage" element={<UpdatePage />} />
+        </Routes>
         <Footer />
       </Box>
     </>
@@ -44,3 +60,10 @@ function App() {
 }
 
 export default App;
+
+/*
+          <Route
+            path="/updatePage"
+            element={<UpdatePage content={} title={} images={} />}
+          />
+          */
