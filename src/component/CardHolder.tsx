@@ -2,31 +2,41 @@ import Masonry from "react-masonry-css";
 import { Box } from "@chakra-ui/react";
 import Card from "../elements/Card";
 
-import { getRandomInt } from "../utils/Utilities";
 import "../css/CardHolder.css";
 import type { Deguzman53 } from "../types/Deguzman53";
+import type { UpdatePageProps } from "../types/UpdatePageProps";
 
 type Props = {
   data: Deguzman53 | null;
+  callback: (info: UpdatePageProps) => void;
 };
 
-const CardHolder = ({ data }: Props) => {
-  console.log("cardholder/data", data);
+const CardHolder = ({ data, callback }: Props) => {
+  // console.log("cardholder/data", data);
+
+  const setUpCallback = (info: UpdatePageProps) => {
+    callback(info);
+  };
 
   const getCards = () => {
-    const cards = [];
-    for (let i = 0; i < 9; i++) {
-      const randomHeight = getRandomInt(200, 600);
-      const staticWidth = 300;
-      cards.push(
-        <Card
-          key={`card${i}`}
-          width={`${staticWidth}px`}
-          height={`${randomHeight}px`}
-        />
-      );
+    if (!data) {
+      return null;
+    } else if (data.cards?.length <= 0) {
+      return <div>No cards available</div>;
+    } else {
+      const cardArray = [];
+      for (let i = 0; i < data.cards.length; i++) {
+        cardArray.push(
+          <Card
+            key={`card${i}`}
+            width="319px"
+            data={data.cards[i]}
+            callback={setUpCallback}
+          />
+        );
+      }
+      return cardArray;
     }
-    return cards;
   };
 
   const breakpointColumnsObj = {
