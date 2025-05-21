@@ -3,45 +3,40 @@ import { Box } from "@chakra-ui/react";
 import Card from "../elements/Card";
 
 import "../css/CardHolder.css";
-import type { Deguzman53 } from "../types/Deguzman53";
-import type { UpdatePageProps } from "../types/UpdatePageProps";
 
-type Props = {
-  data: Deguzman53 | null;
-  callback: (info: UpdatePageProps) => void;
-};
+import type { CardProps, UpdatePageProps } from "../types/GenericTypes";
 
-const CardHolder = ({ data, callback }: Props) => {
+const CardHolder = ({ data, callback }: CardProps) => {
   // console.log("cardholder/data", data);
 
   const setUpCallback = (info: UpdatePageProps) => {
     callback(info);
   };
-
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   const getCards = () => {
     if (!data) {
       return null;
-    } else if (data.cards?.length <= 0) {
+    } else if (
+      !("cards" in data) ||
+      !Array.isArray((data as any).cards) ||
+      (data as any).cards.length <= 0
+    ) {
       return <div>No cards available</div>;
     } else {
+      const cards = (data as { cards: any[] }).cards;
       const cardArray = [];
-      for (let i = 0; i < data.cards.length; i++) {
+      for (let i = 0; i < cards.length; i++) {
         cardArray.push(
-          <Card
-            key={`card${i}`}
-            width="319px"
-            data={data.cards[i]}
-            callback={setUpCallback}
-          />
+          <Card key={`card${i}`} data={cards[i]} callback={setUpCallback} />
         );
       }
       return cardArray;
     }
   };
-
+  /* eslint-enable @typescript-eslint/no-explicit-any */
   const breakpointColumnsObj = {
     default: 4,
-    1436: 3,
+    1436: 2,
     1024: 2,
     900: 2,
     700: 1,

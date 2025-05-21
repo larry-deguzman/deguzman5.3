@@ -1,13 +1,9 @@
 import MainPicture from "../elements/MainPicture";
 import CardHolder from "./CardHolder";
-import type { Deguzman53 } from "../types/Deguzman53";
-import type { UpdatePageProps } from "../types/UpdatePageProps";
 
-type Props = {
-  data: Deguzman53 | null;
-  callback: (info: UpdatePageProps) => void;
-};
-const Main = ({ data, callback }: Props) => {
+import type { CardProps, UpdatePageProps } from "../types/GenericTypes";
+
+const Main = ({ data, callback }: CardProps) => {
   const setUpCallback = (info: UpdatePageProps) => {
     callback(info);
   };

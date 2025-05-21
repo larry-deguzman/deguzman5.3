@@ -4,30 +4,27 @@ import { Box, Image, Text, Button } from "@chakra-ui/react";
 import { useColorContext } from "../context/Color";
 import Theme from "../theme/Theme";
 
-import type { Deguzman53Card } from "../types/Deguzman53";
-import type { UpdatePageProps } from "../types/UpdatePageProps";
+import type { ColorKey, CardProps, CardData } from "../types/GenericTypes";
+
 import CardGlare from "../images/CardGlare.png";
 
-type Props = {
-  width: number | string;
-  data: Deguzman53Card;
-  callback: (info: UpdatePageProps) => void;
-};
-
-type ColorKey = keyof ReturnType<typeof Theme>["colors"];
-
-const Card = ({ width, data, callback }: Props) => {
-  const { title, picture, description } = data;
+const Card = ({ data, callback }: CardProps) => {
+  const prime = useColorContext() as ColorKey;
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+  const { title, picture, description } = data as CardData;
+  // const { title, picture, description } = data;
   // console.log("card/data", title, picture, link, description);
   // console.log("card/data", link);
-  const prime = useColorContext() as ColorKey;
+
   const backgroundColor = Theme().colors[prime].lightest;
 
   const setUpCallback = () => {
     const toSend = {
       title: title,
       content: description,
-      images: [picture],
+      images: Array.isArray(picture) ? picture : [picture],
     };
     callback(toSend);
   };
@@ -35,7 +32,7 @@ const Card = ({ width, data, callback }: Props) => {
   return (
     <Box
       id="Card"
-      w={width}
+      w="319px"
       mt={10}
       ml={10}
       mr={10}
@@ -44,7 +41,7 @@ const Card = ({ width, data, callback }: Props) => {
       overflow="hidden"
       position="relative"
     >
-      <Image src={picture} alt={title} />
+      <Image src={Array.isArray(picture) ? picture[0] : picture} alt={title} />
       <Image
         left={0}
         top={0}

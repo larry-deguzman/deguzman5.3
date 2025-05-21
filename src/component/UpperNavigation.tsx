@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { Box } from "@chakra-ui/react";
 
+import type { ColorKey } from "../types/GenericTypes";
 import { useColorContext } from "../context/Color";
-import Theme from "../theme/Theme";
 import Logomark from "../graphics/Logomark";
-
-type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
 const UpperNavigation = () => {
   const [, setScrollY] = useState(0);

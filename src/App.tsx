@@ -12,7 +12,7 @@ import UpperBumper from "./component/UpperBumper";
 import Footer from "./component/Footer";
 
 import UpdatePage from "./component/UpdatePage";
-import type { UpdatePageProps } from "./types/UpdatePageProps";
+import type { UpdatePageProps } from "./types/GenericTypes";
 
 type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 

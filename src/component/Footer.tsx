@@ -1,4 +1,5 @@
 import { Box, Text, HStack } from "@chakra-ui/react";
+
 import Linkedin from "../graphics/Linkedin";
 import Email from "../graphics/Email";
 
