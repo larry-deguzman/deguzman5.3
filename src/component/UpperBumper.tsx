@@ -9,7 +9,7 @@ const UpperBumper = () => {
       w={[100, 130, 160, 200, 300, 350, 400]}
       height={"header.height"}
     >
-      <Logomark headerHeight={{ height: "header.height" }} />
+      <Logomark headerHeight={{ height: "header.height" }} isSpecial={true} />
     </Box>
   );
 };

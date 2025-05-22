@@ -24,6 +24,7 @@ const UpperNavigation = () => {
       <Box
         id="UnderBox"
         bg={`${prime}.darkest`}
+        zIndex="1000"
         sx={{ position: "fixed", width: "100%" }}
       >
         <Box

@@ -5,12 +5,16 @@ import Theme from "../theme/Theme";
 
 type Props = {
   headerHeight: { [key: string]: string };
+  isSpecial?: boolean;
 };
 type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
-export default function Logomark({ headerHeight }: Props) {
+export default function Logomark({ headerHeight, isSpecial = false }: Props) {
   const prime = useColorContext() as ColorKey;
   const getFill = () => {
+    if (isSpecial) {
+      return Theme().colors[prime].darkest;
+    }
     return Theme().colors[prime].lightest;
   };
   const getOpposite = () => {

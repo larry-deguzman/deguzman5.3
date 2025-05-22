@@ -24,5 +24,47 @@
       "link": "/main",
       "description": "This is a collection of videos that I have created over the years. It includes a variety of genres and styles, showcasing my growth."
     }
+  ],
+  "videos": [
+    {
+      "title": "Paul singing Autumn Leaves",
+      "key": "kErTNHa97xY",
+      "description": "Here is my brother singing Autumn Leaves. He is a talented musician and I am proud of him. I'm so glad that he has found his love of music."
+    },
+    {
+      "title": "Paul playing Bass",
+      "key": "hvTE7aZs7go",
+      "description": "This is my brother rocking out on bass. He plays in a band of talented musicians. He allows rocks out on a guitar, drums, piano and vocals."
+    },
+    {
+      "title": "Paul playing McFly",
+      "key": "hvTE7aZs7go",
+      "description": "This is my bro on vocals and guitar. He really rocks out on this song. What can't this guy do? He is really a gifted musician."
+    },
+    {
+      "title": "Circles",
+      "key": "saSnRfS-QM8",
+      "description": "Here is a video of Post Malone. Well the images are of him, but the vocals are by me. Honestly I just didn't want to make a video, sue me...lol."
+    },
+    {
+      "title": "KAI Lost in Love",
+      "key": "1d_aJDVqjRU",
+      "description": "KAI sang with AC for the last time. We had AC singing from YouTube and KAI singing along with him. Please enjoy this last song by our brother AC."
+    },
+    {
+      "title": "KAI Tribute Dec 9, 2019",
+      "key": "4clluTL2PdY",
+      "description": "This is the 23 minute tribute to AC by KAI. We all miss AC and this is a way that we can pay tribute to him and his memory."
+    },
+    {
+      "title": "DnH - Gone",
+      "key": "fPoBnNxci4w",
+      "description": "This was DnH's tribute to AC on December 9, 2019. Gone was one of the songs on KAI's second album. "
+    },
+    {
+      "title": "DnH Because I Love You",
+      "key": "vRGNf6l11Ks",
+      "description": "This is probably one of my favorite songs from DnH. They remade is recently in 2024 or 2025. It really is a great song."
+    }
   ]
 }
