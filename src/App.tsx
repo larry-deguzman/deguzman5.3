@@ -7,12 +7,14 @@ import { useColorContext } from "./context/Color";
 import useGetJSON from "./utils/GetJSON";
 import Theme from "./theme/Theme";
 import UpperNavigation from "./component/UpperNavigation";
-import Main from "./component/Main";
+import Main from "./pages/Main";
 import UpperBumper from "./component/UpperBumper";
 import Footer from "./component/Footer";
 
-import UpdatePage from "./component/UpdatePage";
 import type { UpdatePageProps } from "./types/GenericTypes";
+
+import UpdatePage from "./component/UpdatePage";
+import VideosPage from "./pages/VideosPage";
 
 type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
@@ -30,7 +32,18 @@ function App() {
   const navigate = useNavigate();
   const callbackFromMain = (info: UpdatePageProps) => {
     // console.log("callbackFromApp", info);
-    navigate("/updatePage", { state: info });
+    let navigateTo = "/updatePage";
+    const additionalInfo = info;
+    switch (info.title) {
+      case "Videos":
+        navigateTo = "/videos";
+        additionalInfo.videos = Array.isArray(data?.videos)
+          ? data.videos
+          : undefined;
+        break;
+      default:
+    }
+    navigate(navigateTo, { state: additionalInfo });
   };
 
   return (
@@ -52,6 +65,7 @@ function App() {
             element={<Main data={data} callback={callbackFromMain} />}
           />
           <Route path="/updatePage" element={<UpdatePage />} />
+          <Route path="/videos" element={<VideosPage />} />"
         </Routes>
         <Footer />
       </Box>

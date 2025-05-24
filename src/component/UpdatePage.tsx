@@ -5,6 +5,8 @@ import { RiArrowLeftLine } from "react-icons/ri";
 import { useColorContext } from "../context/Color";
 import type { UpdatePageProps, ColorKey } from "../types/GenericTypes";
 
+import "../css/Universal.css";
+
 const UpdatePage = () => {
   const prime = useColorContext() as ColorKey;
   const location = useLocation();
@@ -36,7 +38,7 @@ const UpdatePage = () => {
         </Text>
       </Flex>
       <Box>
-        <Text>{title}</Text>
+        <Text className="title-text">{title}</Text>
       </Box>
       <Box>
         <Text>{contentCopy}</Text>
