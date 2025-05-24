@@ -7,7 +7,7 @@ import { useColorContext } from "./context/Color";
 import useGetJSON from "./utils/GetJSON";
 import Theme from "./theme/Theme";
 import UpperNavigation from "./component/UpperNavigation";
-import Main from "./component/Main";
+import Main from "./pages/Main";
 import UpperBumper from "./component/UpperBumper";
 import Footer from "./component/Footer";
 

@@ -29,9 +29,17 @@ export type Deguzman53Card = {
   description: string;
 };
 
+export type Audio = {
+  title: string;
+  url: string;
+  description: string;
+  image?: string;
+};
+
 export type Deguzman53 = {
   cards: Deguzman53Card[];
   videos: Videos[];
+  music: Audio[];
 };
 
 export type UpdatePageProps = {

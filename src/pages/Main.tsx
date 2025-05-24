@@ -1,5 +1,5 @@
 import MainPicture from "../elements/MainPicture";
-import CardHolder from "./CardHolder";
+import CardHolder from "../component/CardHolder";
 
 import type { CardProps, UpdatePageProps } from "../types/GenericTypes";
 
