@@ -21,8 +21,10 @@ const VideosPage = () => {
   const [selectedVideo, setSelectedVideo] = useState<VideoData | null>(null);
   const prime = useColorContext() as ColorKey;
   const location = useLocation();
+  console.log("VideosPage", location);
   const navigate = useNavigate();
   const info = location.state as UpdatePageProps;
+  // console.log("VideosPage", info);
   const { title, videos } = info;
 
   // console.log("Videos", title, content, images);
