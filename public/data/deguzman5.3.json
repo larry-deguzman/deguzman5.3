@@ -14,7 +14,7 @@
     },
     {
       "title": "Personal Music",
-      "picture": "/images/C3D.jpg",
+      "picture": "/images/music.jpg",
       "link": "/main",
       "description": "This is a collection of personal music that I have created over the years. It includes a variety of genres and styles, showcasing my growth as a musician."
     },
@@ -101,18 +101,19 @@
     {
       "title": "Both Sides Now",
       "url": "/music/1960/Both Sides Now.mp3",
-      "description": "I've always been a huge fan of Joni Mitchell. I really do love her vibe and how she communicates emotion. I don't if many artists were to ever able to do that. She really was special."
+      "description": "I've always been a huge fan of Joni Mitchell. I really do love her vibe and how she communicates emotion. I don't if many artists were to ever able to do that. She really was special.",
+      "image": "/images/music/jonimitchell.jpg"
     },
     {
       "title": "Change is Gonna Come",
       "url": "/music/1960/Change is Gonna Come.mp3",
-      "description": "Back in the day 6th Day sang this song and I really liked it. I obviously can't do it as well as they can, but I try. It's always been an amazingly song about how change was coming to the black community."
+      "description": "Back in the day 6th Day sang this song and I really liked it. I obviously can't do it as well as they can, but I try. It's always been an amazing song about how change was coming to the black community."
     },
     {
       "title": "Honey",
       "url": "/music/1960/Honey.mp3",
       "description": "This song was originally performed by Bobby Goldsboro. I don't know if anyone knows this artist, but he was one of my dad's favorite artists. I still have the record in my collection that my dad bought back in the 60s.",
-      "image": "/images/goldsboro.jpg"
+      "image": "/images/music/goldsboro.jpg"
     },
     {
       "title": "Leaving on a Jet Plane",
@@ -122,8 +123,7 @@
     {
       "title": "With Pen In Hand",
       "url": "/music/1960/With Pen In Hand.mp3",
-      "description": "This is another song by Bobby Goldsboro. In my family, my mom's side was the musical side of the family. They were always playing instruments and singing. I mean they did it so much that the in-laws never really participated. I didn't know until later in life that my dad really loved music too. This was one of his favorites.",
-      "image": "/images/goldsboro.jpg"
+      "description": "This is another song by Bobby Goldsboro. In my family, my mom's side was the musical side of the family. They were always playing instruments and singing. I mean they did it so much that the in-laws never really participated. I didn't know until later in life that my dad really loved music too. This was one of his favorites."
     },
     {
       "title": "A Song For You",
@@ -138,22 +138,26 @@
     {
       "title": "Aubrey",
       "url": "/music/1970/Aubrey.mp3",
-      "description": "Bread has always been a fun band. I'm not sure I 100% dig their style, but they are clean and I do like many of their songs. They were a band that I grew up listening to on the radio from time to time."
+      "description": "Bread has always been a fun band. I'm not sure I 100% dig their style, but they are clean and I do like many of their songs. They were a band that I grew up listening to on the radio from time to time.",
+      "image": "/images/music/breadIf.jpg"
     },
     {
       "title": "Easy",
       "url": "/music/1970/Easy.mp3",
-      "description": "Lionel Richie, what can I say. This guy is amazing. From his time with the Commodores to his solo career to his ridiculous writing carrer, this guy was pretty much the man the in late 70's and early 80's."
+      "description": "Lionel Richie, what can I say. This guy is amazing. From his time with the Commodores to his solo career to his ridiculous writing carrer, this guy was pretty much the man the in late 70's and early 80's.",
+      "image": "/images/music/easy.jpg"
     },
     {
       "title": "Fire and Rain",
       "url": "/music/1970/Fire and Rain.mp3",
-      "description": "James Taylor was always a staple when I was growing up. His melodies and guitar were alway hauntingly beautiful. His story telling also made you feel like you were in the story. He was an amazing artist and story teller."
+      "description": "James Taylor was always a staple when I was growing up. His melodies and guitar were alway hauntingly beautiful. His story telling also made you feel like you were in the story. He was an amazing artist and story teller.",
+      "image": "/images/music/jamestaylor.jpg"
     },
     {
       "title": "How Can You Mend A Broken Heart",
       "url": "/music/1970/How Can You Mend A Broken Heart.mp3",
-      "description": "I did this song because I had a broken heart. I did the guitar and sang this song. It's a really sad song about heartbreak and trying your hardest to recover from it. It was a very touching song for me."
+      "description": "I did this song because I had a broken heart. I did the guitar and sang this song. It's a really sad song about heartbreak and trying your hardest to recover from it. It was a very touching song for me.",
+      "image": "/images/music/howCanYouMendABrokenHeart.jpg"
     },
     {
       "title": "How Deep Is Your Love",
@@ -168,7 +172,8 @@
     {
       "title": "If you could read my mind",
       "url": "/music/1970/If you could read my mind.mp3",
-      "description": "This was a fun song to do. Gordan Lightfoot is not someone I really know nor do I really know his songs. This particular song was a fun one to do. I don't know how much work i put into this, but it was a fun song to do."
+      "description": "This was a fun song to do. Gordan Lightfoot is not someone I really know nor do I really know his songs. This particular song was a fun one to do. I don't know how much work i put into this, but it was a fun song to do.",
+      "image": "/images/music/gordonLightfoot.jpg"
     },
     {
       "title": "If",
@@ -178,7 +183,8 @@
     {
       "title": "Isn't She Lovely",
       "url": "/music/1970/Isn't She Lovely.mp3",
-      "description": "Stevie Wonder is one of the most amazing artists ever! His song writing, his singing and everything he does is just, \"Wow\"! What he did in the 70's resonates to even today."
+      "description": "Stevie Wonder is one of the most amazing artists ever! His song writing, his singing and everything he does is just, \"Wow\"! What he did in the 70's resonates to even today.",
+      "image": "/images/music/stevieWonder.jpg"
     },
     {
       "title": "Knocks Me Off My Feet 2",
@@ -193,22 +199,26 @@
     {
       "title": "Overjoyed",
       "url": "/music/1970/Overjoyed.mp3",
-      "description": "Stevie Wonder does it again. This is one of the best songs he's ever written. It's been covered many times by artists such as Brian McKnight, another one of my favorites."
+      "description": "Stevie Wonder does it again. This is one of the best songs he's ever written. It's been covered many times by artists such as Brian McKnight, another one of my favorites.",
+      "image": "/images/music/overjoyed.jpg"
     },
     {
       "title": "Sailing",
       "url": "/music/1970/Sailing.mp3",
-      "description": "The original Chris Cross, hahaha! You know, this guy had a pretty high voice. I struggled a little with this one. I don't know why I covered this one, I think I may have been bored one night and just decided to do it. Anyways, here it is."
+      "description": "The original Chris Cross, hahaha! You know, this guy had a pretty high voice. I struggled a little with this one. I don't know why I covered this one, I think I may have been bored one night and just decided to do it. Anyways, here it is.",
+      "image": "/images/music/chrisCross.jpg"
     },
     {
       "title": "Shes Out Of My Life",
       "url": "/music/1970/Shes Out Of My Life.mp3",
-      "description": "What can I say about Michael Jackson? He IS the king of pop. This was before Beat It and Thriller, but by this point in his career, he was already pretty amazing. What I've always liked about him is that each song he does has so much emotion in it. He really conveys the feeling of the song."
+      "description": "What can I say about Michael Jackson? He IS the king of pop. This was before Beat It and Thriller, but by this point in his career, he was already pretty amazing. What I've always liked about him is that each song he does has so much emotion in it. He really conveys the feeling of the song.",
+      "image": "/images/music/shesOutOfMyLife.jpg"
     },
     {
       "title": "Too Hot",
       "url": "/music/1970/Too Hot.mp3",
-      "description": "This was a fun song to knock out. Kool & The Gang were one of the original funk masters of the 70's. Their upbeat music and funk have always resonated with me. I love their music and their vibe."
+      "description": "This was a fun song to knock out. Kool & The Gang were one of the original funk masters of the 70's. Their upbeat music and funk have always resonated with me. I love their music and their vibe.",
+      "image": "/images/music/koolAndTheGang.jpg"
     },
     {
       "title": "Watching Scotty Grow",
@@ -228,22 +238,26 @@
     {
       "title": "Africa",
       "url": "/music/1980/Africa.mp3",
-      "description": "I'm not sure why I recorded this song. I guess I like Toto. I don't know if I love them, but it was a fun song to sing. I think I was just bored when I recorded this."
+      "description": "I'm not sure why I recorded this song. I guess I like Toto. I don't know if I love them, but it was a fun song to sing. I think I was just bored when I recorded this.",
+      "image": "/images/music/totoAfrica.jpg"
     },
     {
       "title": "Charades",
       "url": "/music/1980/Charades.mp3",
-      "description": "I've always liked Grease and Grease2 . This song was from Grease 2. The guy who sang it is definitely not a singer, but the song is nice. It has a nice vibe to it. I liked the song and decided to record it. Enjoy!"
+      "description": "I've always liked Grease and Grease2. This song was from Grease 2. The guy who sang it is definitely not a singer, but the song is nice. It has a nice vibe to it. I liked the song and decided to record it. Enjoy!",
+      "image": "/images/music/grease2.jpg"
     },
     {
       "title": "Di Na Natuto",
       "url": "/music/1980/Di Na Natuto.mp3",
-      "description": "This song was sung by Gary Valenciano. Then many years ago when we were on the road in San Diego, one of the guys from the group I managed sang it in a karaoke bar. I think they were trying to set him up, because the mc was singing and offered to him. He banged to song out! He was amazing. I think the whole crowd was just stunned. I obviously can not knock this out as well as him, but I do like the song and I did try my best."
+      "description": "This song was sung by Gary Valenciano. Then many years ago when we were on the road in San Diego, one of the guys from the group I managed sang it in a karaoke bar. I think they were trying to set him up, because the mc was singing and offered to him. He banged to song out! He was amazing. I think the whole crowd was just stunned. I obviously can not knock this out as well as him, but I do like the song and I did try my best.",
+      "image": "/images/music/garyV.jpg"
     },
     {
       "title": "Got To Believe In Magic",
       "url": "/music/1980/Got To Believe In Magic.mp3",
-      "description": "In early 2025 I watched Zapped. I'm not sure if I ever watched it fully, because when it came out I was just a kid. I wasn't allowed to watch it because there was some nudity. Obviously, I can watch it now so I watched it. I don't know if I liked the movie, but I did find a few songs in the movie that I liked and thought were fair."
+      "description": "In early 2025 I watched Zapped. I'm not sure if I ever watched it fully, because when it came out I was just a kid. I wasn't allowed to watch it because there was some nudity. Obviously, I can watch it now so I watched it. I don't know if I liked the movie, but I did find a few songs in the movie that I liked and thought were fair.",
+      "image": "/images/music/zapped.jpg"
     },
     {
       "title": "Hallelujah",
@@ -273,22 +287,26 @@
     {
       "title": "Kissing A Fool",
       "url": "/music/1980/Kissing A Fool.mp3",
-      "description": "George Michael, rest his soul. When I was a kid, well young adult... this is one of the songs my brothers and I would sing. My oldest brother would play the piano, my middle brother would sing the high parts and I would sing the lower parts. Unfortunately we couldn't really sing this song because it was too high for us. Fast forward 5 years later and it's now well within my range. This is in honor of my time with my brothers when we were young bucks."
+      "description": "George Michael, rest his soul. When I was a kid, well young adult... this is one of the songs my brothers and I would sing. My oldest brother would play the piano, my middle brother would sing the high parts and I would sing the lower parts. Unfortunately we couldn't really sing this song because it was too high for us. Fast forward 5 years later and it's now well within my range. This is in honor of my time with my brothers when we were young bucks.",
+      "image": "/images/music/kissingAFool.jpg"
     },
     {
       "title": "Lady",
       "url": "/music/1980/Lady.mp3",
-      "description": "Again Lionel RIchie! Does this guy know how to sleep? he wrote this amazing hit for Kenny Rodgers back in the 80's. I've have always loved this song. My uncle would sing this back in the day. Unfortunately I can't get the guy to record with me. You know who you are uncle, hopefully your kids will be able to convince you to record this with me."
+      "description": "Again Lionel Richie! Does this guy know how to sleep? he wrote this amazing hit for Kenny Rodgers back in the 80's. I've have always loved this song. My uncle would sing this back in the day. Unfortunately I can't get the guy to record with me. You know who you are uncle, hopefully your kids will be able to convince you to record this with me.",
+      "image": "/images/music/kennyRogers.jpg"
     },
     {
       "title": "Lately",
       "url": "/music/1980/Lately.mp3",
-      "description": "This is a Stevie Wonder song that was covered by Jodeci. Both Stevie and Jodeci did an amazing job on this song. I tried to emulate their greatness, but still came up short. I was still able to sing the song and all the parts, I think I'm just missing something, lol."
+      "description": "This is a Stevie Wonder song that was covered by Jodeci. Both Stevie and Jodeci did an amazing job on this song. I tried to emulate their greatness, but still came up short. I was still able to sing the song and all the parts, I think I'm just missing something, lol.",
+      "image": "/images/music/jodeci.jpg"
     },
     {
       "title": "Masterpiece",
       "url": "/music/1980/Masterpiece.mp3",
-      "description": "This was just another one of the songs that I grew up with. I remember hearing my brothers playing this song. It's a pretty easy song. It's a very run of the mill 80's song."
+      "description": "This was just another one of the songs that I grew up with. I remember hearing my brothers playing this song. It's a pretty easy song. It's a very run of the mill 80's song.",
+      "image": "/images/music/alanticStarr.jpg"
     },
     {
       "title": "NGGU Acoustic",
@@ -303,7 +321,8 @@
     {
       "title": "Somebody",
       "url": "/music/1980/Somebody.mp3",
-      "description": "I remember I learned this song back in the mid 90's. There was a girl I went to school with that I liked and she once told me that she really liked this song. I think this was the kind of guy she was looking for. We never did get together, but I remember this song from my past and it brings back fond memories."
+      "description": "I remember I learned this song back in the mid 90's. There was a girl I went to school with that I liked and she once told me that she really liked this song. I think this was the kind of guy she was looking for. We never did get together, but I remember this song from my past and it brings back fond memories.",
+      "image": "/images/music/somebody.jpg"
     },
     {
       "title": "Stay Gold",
@@ -318,7 +337,8 @@
     {
       "title": "SuperStar",
       "url": "/music/1980/SuperStar.mp3",
-      "description": "Super Star by The Carpenters and then covered by Luther Vandross, rest their souls is a great song. Both artists put their own spin on the classic. I think I put my own flavor on it. Enjoy!"
+      "description": "Super Star by The Carpenters and then covered by Luther Vandross, rest their souls is a great song. Both artists put their own spin on the classic. I think I put my own flavor on it. Enjoy!",
+      "image": "/images/music/superstar.jpg"
     },
     {
       "title": "Truely feat. Uncle Eddie",
@@ -328,12 +348,14 @@
     {
       "title": "Turn Back The Hands Of Time",
       "url": "/music/1980/Turn Back The Hands Of Time.mp3",
-      "description": "HAHAHA! This was a hilarious song to do. It's from Grease 2. It's the song between the heroin and hero. I sang both parts, lol. I was thinking that I didn't want to put this song up, but ehhhh...whatever."
+      "description": "HAHAHA! This was a hilarious song to do. It's from Grease 2. It's the song between the heroin and hero. I sang both parts, lol. I was thinking that I didn't want to put this song up, but ehhhh...whatever.",
+      "image": "/images/music/turnBackTheHandsOfTime.jpg"
     },
     {
       "title": "We've Got Tonight",
       "url": "/music/1980/We've Got Tonight.mp3",
-      "description": "My mom really likes Kenny Rogers and i grew hearing him. I'm pretty sure he was a major influence in my singing life."
+      "description": "My mom really likes Kenny Rogers and I grew hearing him. I'm pretty sure he was a major influence in my singing life.",
+      "image": "/images/music/weveGotTonight.jpg"
     },
     {
       "title": "Where Did My Heart Go",
@@ -358,22 +380,26 @@
     {
       "title": "Beauty",
       "url": "/music/1990/Beauty.mp3",
-      "description": "This was a the bomb song from back in the day. I don't know if it ever really became popular, but I loved it and always wanted to record it. I finally got the chance a few years ago. It's not the cleanest, but I think it's okay for an amateur like me. ;)"
+      "description": "This was a the bomb song from back in the day. I don't know if it ever really became popular, but I loved it and always wanted to record it. I finally got the chance a few years ago. It's not the cleanest, but I think it's okay for an amateur like me. ;)",
+      "image": "/images/music/druHillBeauty.jpg"
     },
     {
       "title": "Cherish",
       "url": "/music/1990/Cherish.mp3",
-      "description": "We did this song for my cousin's wedding anniversary. In fact, this was the song that we sung when his wife was walking down the aisle. We ended up re-doing it in 2025. We sang it at the celebration live. I ened coming home and figured I should just record it since I already had all of the background vocals mapped out."
+      "description": "We did this song for my cousin's wedding anniversary. In fact, this was the song that we sung when his wife was walking down the aisle. We ended up re-doing it in 2025. We sang it at the celebration live. I ened coming home and figured I should just record it since I already had all of the background vocals mapped out.",
+      "image": "/images/music/cherish.jpg"
     },
     {
       "title": "Every Beat Of My Heart",
       "url": "/music/1990/Every Beat Of My Heart.mp3",
-      "description": "Here is another song by Brian McKnight. He is one of the best vocalists and song writers during my time here on earth. I'm glad that I was alive to hear these songs as they came out. I think a lot of his influnce came from Stevie Wonder so it makes sense that I completely appreciate his skill set."
+      "description": "Here is another song by Brian McKnight. He is one of the best vocalists and song writers during my time here on earth. I'm glad that I was alive to hear these songs as they came out. I think a lot of his influnce came from Stevie Wonder so it makes sense that I completely appreciate his skill set.",
+      "image": "/images/music/everyBeatOfMyHeart.jpg"
     },
     {
       "title": "Forevermore",
       "url": "/music/1990/Forevermore.mp3",
-      "description": "This was a song by a group called Side-A. They're a Pilipino band from the Phillipines. They're a decent band. Nothing to be ashamed about, but this was one of their best songs. I had a great time recording this. In fact my boy from back in the day also recorded this song sometime in the 2000's."
+      "description": "This was a song by a group called Side-A. They're a Pilipino band from the Phillipines. They're a decent band. Nothing to be ashamed about, but this was one of their best songs. I had a great time recording this. In fact my boy from back in the day also recorded this song sometime in the 2000's.",
+      "image": "/images/music/forevermore.jpg"
     },
     {
       "title": "I Do",
@@ -398,17 +424,20 @@
     {
       "title": "We're Not Making Love No More",
       "url": "/music/1990/We're Not Making Love No More.mp3",
-      "description": "Again Dru Hill, they are the group from the 90's that defined an era for me. This is my rendition of We're Not Making Love Anymore. I think one day I may re-record this and clean it up."
+      "description": "Again Dru Hill, they are the group from the 90's that defined an era for me. This is my rendition of We're Not Making Love Anymore. I think one day I may re-record this and clean it up.",
+      "image": "/images/music/wereNotMakingLoveNoMore.jpg"
     },
     {
       "title": "Beautiful",
       "url": "/music/2000/Beautiful.mp3",
-      "description": "This was a Christina Aguilra song that was shifted to a male key. I liked this song and I liked recording it."
+      "description": "This was a Christina Aguilra song that was shifted to a male key. I liked this song and I liked recording it.",
+      "image": "/images/music/beautiful.jpg"
     },
     {
       "title": "Because Of You",
       "url": "/music/2000/Because Of You.mp3",
-      "description": "This song was originally done by one of my friends. Unfortunately Keith Martin passed away in 2024. This version is a rendition by Gary Valenciano. I don't know why, but I think I like this version better. Maybe it's related to my music taste as a Pilipino. In any case this was a great song and remember it being played at almost every wedding back in the day. It was the wedding song of the season."
+      "description": "This song was originally done by one of my friends. Unfortunately Keith Martin passed away in 2024. This version is a rendition by Gary Valenciano. I don't know why, but I think I like this version better. Maybe it's related to my music taste as a Pilipino. In any case this was a great song and remember it being played at almost every wedding back in the day. It was the wedding song of the season.",
+      "image": "/images/music/becauseOfYou.jpg"
     },
     {
       "title": "Broken Vow",
@@ -428,7 +457,8 @@
     {
       "title": "End Of May",
       "url": "/music/2000/End Of May.mp3",
-      "description": "Michael Buble is an artist that I've recently discovered. It's only been a couple of years, but I really like him. His songs are great and he seems like a pretty nice guy. I wish I knew more about him back in the day and didn't listen to what my counterparts where saying about Buble. I think he's great and love his music. Many nights I have him playing on Alexa and me singing along."
+      "description": "Michael Buble is an artist that I've recently discovered. It's only been a couple of years, but I really like him. His songs are great and he seems like a pretty nice guy. I wish I knew more about him back in the day and didn't listen to what my counterparts where saying about Buble. I think he's great and love his music. Many nights I have him playing on Alexa and me singing along.",
+      "image": "/images/music/endOfMay.jpg"
     },
     {
       "title": "Everything",
@@ -443,7 +473,8 @@
     {
       "title": "Her Heart",
       "url": "/music/2000/Her Heart.mp3",
-      "description": "Charlie Wilson one of the greatest emotional singers of his time that no one really knows of. I wish that he got huge and wrecked the industry. I think the guy is really, really good. It's like I beleive everything that he sings."
+      "description": "Charlie Wilson one of the greatest emotional singers of his time that no one really knows of. I wish that he got huge and wrecked the industry. I think the guy is really, really good. It's like I beleive everything that he sings.",
+      "image": "/images/music/herHeart.jpg"
     },
     {
       "title": "Home (MB)",
@@ -453,12 +484,14 @@
     {
       "title": "I Wanna Be Loved",
       "url": "/music/2000/I Wanna Be Loved.mp3",
-      "description": "Eric Benet is a pretty fun artist to sing. I like a lot of his songs. I'm not sure if this was before or after his sex addiction scandal thing a thing, but either way I don't care. I think I'm just from an older generation that doesn't really care what the person is like and how they live their lives. I appreciate his musical talent and that's all I really care about."
+      "description": "Eric Benet is a pretty fun artist to sing. I like a lot of his songs. I'm not sure if this was before or after his sex addiction scandal thing a thing, but either way I don't care. I think I'm just from an older generation that doesn't really care what the person is like and how they live their lives. I appreciate his musical talent and that's all I really care about.",
+      "image": "/images/music/iWannaBeLoved.jpg"
     },
     {
       "title": "I'd Rather",
       "url": "/music/2000/I'd Rather.mp3",
-      "description": "I remember this song when it came out. There was a girl that I was dating and she dedicated it to me after we broke up. She was a pretty nice girl, but I just didn't think it was working and broke it off with her. I don't think I made a mistake or anything, just wondering what she's been up to now a days."
+      "description": "I remember this song when it came out. There was a girl that I was dating and she dedicated it to me after we broke up. She was a pretty nice girl, but I just didn't think it was working and broke it off with her. I don't think I made a mistake or anything, just wondering what she's been up to now a days.",
+      "image": "/images/music/idRather.jpg"
     },
     {
       "title": "In Her Eyes",
@@ -468,7 +501,8 @@
     {
       "title": "Incarnacion",
       "url": "/music/2000/Incarnacion.mp3",
-      "description": "Hahaha! This was just me doing the background vocals for Jack Black's Nacho Libre character. When I made this my nephew thought it was hilarious. I still think it's hilarious. You can see the video in my video section."
+      "description": "Hahaha! This was just me doing the background vocals for Jack Black's Nacho Libre character. When I made this my nephew thought it was hilarious. I still think it's hilarious. You can see the video in my video section.",
+      "image": "/images/music/incarnacion.jpg"
     },
     {
       "title": "Make You Feel My Love",
@@ -478,12 +512,14 @@
     {
       "title": "Me and Mrs Jones",
       "url": "/music/2000/Me and Mrs Jones.mp3",
-      "description": "This was a favorite of mine. Back in the day when my now bestie was in the car with me. At this point we were not besties yet we were just friends. I think at this point she hadn't really ever heard me sing and this song came on the radio and I sang along with it and she was impressed. I was surprised and I think that's one of the reasons I sing today."
+      "description": "This was a favorite of mine. Back in the day when my now bestie was in the car with me. At this point we were not besties yet we were just friends. I think at this point she hadn't really ever heard me sing and this song came on the radio and I sang along with it and she was impressed. I was surprised and I think that's one of the reasons I sing today.",
+      "image": "/images/music/meAndMrsJones.jpg"
     },
     {
       "title": "Only Hope",
       "url": "/music/2000/Only Hope.mp3",
-      "description": "I loved this song from A Walk To Remember. Yeah yeah I'm a bit of a softie. I liked this movie as well as a handful of other dramas. I remember this song that Mandy Moore sang and was captivated by it. Recently I found a male version of the song and decided to record it. I hope I did it justice."
+      "description": "I loved this song from A Walk To Remember. Yeah yeah I'm a bit of a softie. I liked this movie as well as a handful of other dramas. I remember this song that Mandy Moore sang and was captivated by it. Recently I found a male version of the song and decided to record it. I hope I did it justice.",
+      "image": "/images/music/onlyHope.jpg"
     },
     {
       "title": "Still With You",
@@ -509,7 +545,7 @@
       "title": "Vincent",
       "url": "/music/2000/Vincent.mp3",
       "description": "Here's another Josh Groban song. It's a remake from Don Mclean back in 1971. Josh Groban put his own spin on this classic. It's an awesome song about Vincent Van Gogh's life and his struggles. He died early in his life and was troubled by his mental and emotional struggles. His work is world famous and he has been immortalized by not only his work, but this song as well.",
-      "image": "/images/vangogh.jpg"
+      "image": "/images/music/vangogh.jpg"
     },
     {
       "title": "Wait For You",
@@ -534,22 +570,26 @@
     {
       "title": "You're Still You",
       "url": "/music/2000/You're Still You.mp3",
-      "description": "Josh Groban songs are a plenty on this list. He's an easy artist. You can sing his songs pretty easily, but I don't think many people, myself included who can really replicate his precision and attention to detail. I don't think he's very heavily produced at all. In fact I've heard him a number of times singing live and he's just that good and that specific with the notes that he hits."
+      "description": "Josh Groban songs are a plenty on this list. He's an easy artist. You can sing his songs pretty easily, but I don't think many people, myself included who can really replicate his precision and attention to detail. I don't think he's very heavily produced at all. In fact I've heard him a number of times singing live and he's just that good and that specific with the notes that he hits.",
+      "image": "/images/music/youreStillYou.jpg"
     },
     {
       "title": "Catch A Grenade",
       "url": "/music/2010/Catch A Grenade.mp3",
-      "description": "Here's a Bruno Mars song. His songs are pretty ridculously difficult to sing. I like him a ton as an artist, but his songs really are difficult to emulate. He's got such a high voice. I think that's just how his voice is. He is an amazing skilled talent."
+      "description": "Here's a Bruno Mars song. His songs are pretty ridculously difficult to sing. I like him a ton as an artist, but his songs really are difficult to emulate. He's got such a high voice. I think that's just how his voice is. He is an amazing skilled talent.",
+      "image": "/images/music/catchAGrenade.jpg"
     },
     {
       "title": "Chivarly Is Dead",
       "url": "/music/2010/Chivarly Is Dead.mp3",
-      "description": "Here's a song by Trevor Wesley. I don't know of any other songs that he's worked on, but I do like this song and I like the story that it tells. It talks about about being a great and gentlemanly guy that will still take you to the sack, lol. It was a fun song to sing."
+      "description": "Here's a song by Trevor Wesley. I don't know of any other songs that he's worked on, but I do like this song and I like the story that it tells. It talks about about being a great and gentlemanly guy that will still take you to the sack, lol. It was a fun song to sing.",
+      "image": "/images/music/chivalryIsDead.jpg"
     },
     {
       "title": "Dive (acoustic)",
       "url": "/music/2010/Dive (acoustic).mp3",
-      "description": "Dive is song that was originally sung by Ed Sheeran. Ed Sheeran is a fantastic writer/singer. He has a number of hits to his name and is still going strong. Dive was a great song to stretch my range and vocal texture to."
+      "description": "Dive is song that was originally sung by Ed Sheeran. Ed Sheeran is a fantastic writer/singer. He has a number of hits to his name and is still going strong. Dive was a great song to stretch my range and vocal texture to.",
+      "image": "/images/music/dive.jpg"
     },
     {
       "title": "Evermore",
@@ -559,7 +599,8 @@
     {
       "title": "Grow As We Go",
       "url": "/music/2010/Grow As We Go.mp3",
-      "description": "This was an amazing song by Ben Platt. Ben Platt was the \"Magic\" guy from Pitch Perfect. He released an album back in 2019. This was one of the songs on the album. It's a sweet song about staying together and growing together."
+      "description": "This was an amazing song by Ben Platt. Ben Platt was the \"Magic\" guy from Pitch Perfect. He released an album back in 2019. This was one of the songs on the album. It's a sweet song about staying together and growing together.",
+      "image": "/images/music/growAsWeGo.jpg"
     },
     {
       "title": "I Won't Give Up",
@@ -569,13 +610,14 @@
     {
       "title": "Locked Out Of Heaven",
       "url": "/music/2010/Locked Out Of Heaven.mp3",
-      "description": "Here's another Bruno Mars song. This song is a really hard song to sing. It is high, but the range is not the problem. The problem is that the song stays up in the upper range of my voice for like the entire song. This song is really a beast to sing."
+      "description": "Here's another Bruno Mars song. This song is a really hard song to sing. It is high, but the range is not the problem. The problem is that the song stays up in the upper range of my voice for like the entire song. This song is really a beast to sing.",
+      "image": "/images/music/lockedOutOfHeavan.jpg"
     },
     {
       "title": "Love Never Felt So Good",
       "url": "/music/2010/Love Never Felt So Good.mp3",
-      "description": "This is one of my most favorite songs to sing and listen to. I think this was a great remake of a classic Micahel Jackson song by Justin Timberlake. Listen to this one. It's a great song with great energy.",
-      "image": "/images/loveneverfeltsogood.jpg"
+      "description": "This is one of my most favorite songs to sing and listen to. I think this was a great remake of a classic Michael Jackson song by Justin Timberlake. Listen to this one. It's a great song with great energy.",
+      "image": "/images/music/loveneverfeltsogood.jpg"
     },
     {
       "title": "One Call Away",
@@ -585,23 +627,26 @@
     {
       "title": "Pray For Me",
       "url": "/music/2010/Pray For Me.mp3",
-      "description": "This song was originally done by Anthony Hamilton. Just like Charlie Wilson, Anthony Hamilton was not recognized as I think he should have been. I don't know if most people know who he is, but if you do know this is his song Pray for Me."
+      "description": "This song was originally done by Anthony Hamilton. Just like Charlie Wilson, Anthony Hamilton was not recognized as I think he should have been. I don't know if most people know who he is, but if you do know this is his song Pray for Me.",
+      "image": "/images/music/prayForMe.jpg"
     },
     {
       "title": "Shame",
       "url": "/music/2010/Shame.mp3",
-      "description": "Tyrese has always been one of my absolute favorites. I love his voice and the texture of his voice. His range and my range are nearly identical and I love his swag and artistry."
+      "description": "Tyrese has always been one of my absolute favorites. I love his voice and the texture of his voice. His range and my range are nearly identical and I love his swag and artistry.",
+      "image": "/images/music/shame.jpg"
     },
     {
       "title": "Some One You Loved",
       "url": "/music/2010/Some One You Loved.mp3",
       "description": "I think this is the first Lewis Capaldi song that I did. This guy is a pretty good singer. I love that he doesn't look like your typical artist. He just looks like a normal guy that can really sing.",
-      "image": "/images/lewiscapaldi.jpg"
+      "image": "/images/music/lewiscapaldi.jpg"
     },
     {
       "title": "What I Did For Love",
       "url": "/music/2010/What I Did For Love.mp3",
-      "description": "This song is originally from Chorus Line. We did this play in high school. I always liked this song, but it was just too high for me until I found this instrumental that Josh Groban sang."
+      "description": "This song is originally from Chorus Line. We did this play in high school. I always liked this song, but it was just too high for me until I found this instrumental that Josh Groban sang.",
+      "image": "/images/music/whatIDidForLove.jpg"
     },
     {
       "title": "When I Fall In Love",
@@ -621,18 +666,20 @@
     {
       "title": "A Thousand Miles",
       "url": "/music/2010/A Thousand Miles.mp3",
-      "description": "I recently started listening to Teddy Swims. He did a bunch covers and man did he do them well. I am nowhere near his skill. This guy is the real thing. His voice is rough, but still it's so smooth. He's an amazing vocalist. I'm not sure if it's natural or he has a ton of training. This is a cover of Teddy Swims covering Vanessa Carlton."
+      "description": "I recently started listening to Teddy Swims. He did a bunch covers and man did he do them well. I am nowhere near his skill. This guy is the real thing. His voice is rough, but still it's so smooth. He's an amazing vocalist. I'm not sure if it's natural or he has a ton of training. This is a cover of Teddy Swims covering Vanessa Carlton.",
+      "image": "/images/music/aThousandMiles.jpg"
     },
     {
       "title": "Circles",
       "url": "/music/2010/Circles.mp3",
-      "description": "So I didn't know who this artist was at all. I remmeber one of my co-workers talking about Post Malone and was like, \"Who's that?\". He was actually dumb founded that I had never heard of him. I have heard his songs, but I didn't know who he was so I decided to do some research that night and I came up with this. You can check out the video in my video section. This was all done in one night."
+      "description": "So I didn't know who this artist was at all. I remmeber one of my co-workers talking about Post Malone and was like, \"Who's that?\". He was actually dumb founded that I had never heard of him. I have heard his songs, but I didn't know who he was so I decided to do some research that night and I came up with this. You can check out the video in my video section. This was all done in one night.",
+      "image": "/images/music/circles.jpg"
     },
     {
       "title": "Do For Love",
       "url": "/music/2010/Do For Love.mp3",
       "description": "This was a great song to do. This is basically me covering Dua Lipa covering Bobby Calwell. I really enjoyed the emotion and vibe of this song. There's not much to say except I hope that you like what you hear. I definitely had a great time recording this.",
-      "image": "/images/dualipa.jpg"
+      "image": "/images/music/dualipa.jpg"
     },
     {
       "title": "Don't Stop Believin",
@@ -667,7 +714,8 @@
     {
       "title": "Only A Lifetime",
       "url": "/music/2010/Only A Lifetime.mp3",
-      "description": "This song is a song about your life and the questions we all should be asking about how we're living our lives. This was orignally done by Finneas and is a great song. The first time I heard this song I was touched by the wisdom and simplicity of the song. It's reminder that life and the important things in life are the simple quiet things that we many times take for granted."
+      "description": "This song is a song about your life and the questions we all should be asking about how we're living our lives. This was orignally done by Finneas and is a great song. The first time I heard this song I was touched by the wisdom and simplicity of the song. It's reminder that life and the important things in life are the simple quiet things that we many times take for granted.",
+      "image": "/images/music/onlyALifetime.jpg"
     },
     {
       "title": "Pointless",
@@ -677,12 +725,14 @@
     {
       "title": "She",
       "url": "/music/2010/She.mp3",
-      "description": "This was a great song to record. This version was a cover by Elvis Contello who was covering Charles Aznavour. Although this came out in 1974 and 1999, it was rereleased again in 2022. I like this song a lot. It's beauty is in it's simplicity. I hope you enjoy this song as much as I do."
+      "description": "This was a great song to record. This version was a cover by Elvis Contello who was covering Charles Aznavour. Although this came out in 1974 and 1999, it was rereleased again in 2022. I like this song a lot. It's beauty is in it's simplicity. I hope you enjoy this song as much as I do.",
+      "image": "/images/music/she.jpg"
     },
     {
       "title": "Speechless",
       "url": "/music/2010/Speechless.mp3",
-      "description": "This is a song by Dan + Shay. I have no idea who they are or even if it's just one person. I heard this song in 2024 and really liked it so I decided to record it. It was actually harder to sing than I thought. I think I did an okay job, but I'll just you decide."
+      "description": "This is a song by Dan + Shay. I have no idea who they are or even if it's just one person. I heard this song in 2024 and really liked it so I decided to record it. It was actually harder to sing than I thought. I think I did an okay job, but I'll just you decide.",
+      "image": "/images/music/speechless.jpg"
     },
     {
       "title": "The First Time Ever I Saw Your Face",
@@ -692,26 +742,29 @@
     {
       "title": "The Impossible Dream",
       "url": "/music/2010/The Impossible Dream.mp3",
-      "description": "This song has been covered by a lot of artists. Here's an incomplete list: Andy Williams, Luther Vandross, Sammy Davis Jr., Frank Sinatra, Tom Jones, Richard Kily, Jack Jones, Glen Campbell, etc."
+      "description": "This song has been covered by a lot of artists. Here's an incomplete list: Andy Williams, Luther Vandross, Sammy Davis Jr., Frank Sinatra, Tom Jones, Richard Kily, Jack Jones, Glen Campbell, etc.",
+      "image": "/images/music/theImpossibleDream.jpg"
     },
     {
       "title": "Dear Theodosia",
-      "url": "/music/1980/Dear Theodosia.mp3",
-      "description": "This was a fun song to do. It's a song from Hamilton. I sang both of the parts and changed my voice a bit for each of the parts."
+      "url": "/music/Broadway/Dear Theodosia.mp3",
+      "description": "This was a fun song to do. It's a song from Hamilton. I sang both of the parts and changed my voice a bit for each of the parts.",
+      "image": "/images/music/dearTheo.jpg"
     },
     {
       "title": "For Forever",
-      "url": "/music/1980/For Forever.mp3",
+      "url": "/music/Broadway/For Forever.mp3",
       "description": "This was from Dear Evan Hansen. You know on this occasion, I liked the move way better than the actual play. I ended up walking out of the play because I thought it was pretty terrible."
     },
     {
-      "title": "Grow As We Grow",
-      "url": "/music/1980/I Know Him.mp3",
-      "description": "This is was a fun snippet to record. I think the guy who sang this was also in Frozen. This is from Hamilton. I think he was Kristoff and Sven in Frozen."
+      "title": "I Know Him",
+      "url": "/music/Broadway/I Know Him.mp3",
+      "description": "This is was a fun snippet to record. I think the guy who sang this was also in Frozen. This is from Hamilton. I think he was Kristoff and Sven in Frozen.",
+      "image": "/images/music/iKNowHim.jpg"
     },
     {
-      "title": "I Know Him",
-      "url": "/music/1980/One Song.mp3",
+      "title": "One Song",
+      "url": "/music/Broadway/One Song.mp3",
       "description": "This is from Rent. I really liked this play. I really like the Broadway version of this. I was not a fan of the movie at all. I feel like they were trying too hard with the movie to communicate some message or something. The broadway play itself I felt was more sublte. This was originally sung by Adam Pascal."
     },
     {
@@ -732,7 +785,8 @@
     {
       "title": "It's Beginning To Look Like Christmas",
       "url": "/music/christmas/Its Beginning to Look Like Christmas.mp3",
-      "description": "Here is another song by Michael Buble. As it is a Christmas song, it has a very pleasant vibe to it. It was originally sung by Bing Crosby and later covered by a number artists. This is defintiely a classic."
+      "description": "Here is another song by Michael Buble. As it is a Christmas song, it has a very pleasant vibe to it. It was originally sung by Bing Crosby and later covered by a number artists. This is defintiely a classic.",
+      "image": "/images/music/itsBeginingToLookLikeChristmas.jpg"
     },
     {
       "title": "It's The Most Wonderful Time Of The Year",
@@ -742,7 +796,8 @@
     {
       "title": "Last Christmas",
       "url": "/music/christmas/Last Christmas.mp3",
-      "description": "Wham! Haha, I remember hearing this when I was growing up. George Michael was a great singer and performer. This was released in 1984 when times were good and easy going."
+      "description": "Wham! Haha, I remember hearing this when I was growing up. George Michael was a great singer and performer. This was released in 1984 when times were good and easy going.",
+      "image": "/images/music/lastChristms.jpg"
     },
     {
       "title": "The Christmas Song",
@@ -750,9 +805,10 @@
       "description": "This Nat King Cole and Johnny Mathis classic evokes memories of the traditional Christmas memories of ice skating in the park, shopping and delicious treats. It reminds me of warm winter nights by the fire."
     },
     {
-      "title": "Underneath The Christmas Tree",
+      "title": "h The Christmas Tree",
       "url": "/music/christmas/Underneath the tree.mp3",
-      "description": "I really do love Kelly Clarkson. I remember the first time I saw her on American Idol. She was singing Respect and I knew at that moment she was gonna win that show. She really has continued to impress me over the years. I wish that I could sing her songs, but I just can't. I figured this was one of the songs I could do in my octave."
+      "description": "I really do love Kelly Clarkson. I remember the first time I saw her on American Idol. She was singing Respect and I knew at that moment she was gonna win that show. She really has continued to impress me over the years. I wish that I could sing her songs, but I just can't. I figured this was one of the songs I could do in my octave.",
+      "image": "/images/music/underneathTheChristmasTree.jpg"
     },
     {
       "title": "White Christmas",
@@ -762,27 +818,32 @@
     {
       "title": "Winter Wonderland",
       "url": "/music/christmas/Winter Wonderland.mp3",
-      "description": "Winter Wonderland was originally released by Bing Crosby back in the day, but has been covered by Michael Buble, Rod Stewart, Chloe Bailey, Amy Grant, Johnny Mathis and many many more. This is also a classic song that Bing Crosby released back in 1962 and has been around for 60+ years. Again this is one of those songs that is almost required in any Christmas Collection."
+      "description": "Winter Wonderland was originally released by Bing Crosby back in the day, but has been covered by Michael Buble, Rod Stewart, Chloe Bailey, Amy Grant, Johnny Mathis and many many more. This is also a classic song that Bing Crosby released back in 1962 and has been around for 60+ years. Again this is one of those songs that is almost required in any Christmas Collection.",
+      "image": "/images/music/winterWonderland.jpg"
     },
     {
       "title": "Bakit Pa",
       "url": "/music/Tanjoco/Bakit Pa.mp3",
-      "description": "Bakit Pa was a song that was released by Jesse Zaragoza in 1997. The singer is my cousin. This is one of her karaoke standards. lShe's actually never recorded before in life and this was the first one she's ever done. I think she did a fantastic job and that she has a lot of natural talent. She really did very very good."
+      "description": "Bakit Pa was a song that was released by Jesse Zaragoza in 1997. The singer is my cousin. This is one of her karaoke standards. lShe's actually never recorded before in life and this was the first one she's ever done. I think she did a fantastic job and that she has a lot of natural talent. She really did very very good.",
+      "image": "/images/music/bakitPa.jpg"
     },
     {
       "title": "Die With A Smile",
       "url": "/music/Tanjoco/Die With A Smile.mp3",
-      "description": "This song was done by my cousin and I. I think she did really good on this one. She has never recorded in her life. This was her first try at recording and I think she did really really well. I know she is my cousin and maybe I tend to be biased, but really? She did amazingly well for her first try!"
+      "description": "This song was done by my cousin and I. I think she did really good on this one. She has never recorded in her life. This was her first try at recording and I think she did really really well. I know she is my cousin and maybe I tend to be biased, but really? She did amazingly well for her first try!",
+      "image": "/images/music/dieWIthASmile.jpg"
     },
     {
       "title": "Endless Love",
       "url": "/music/Tanjoco/Endless Love.mp3",
-      "description": "I did this song with one of my cousins. This cousin has a little bit of singing chops. She has sung in front of Google and performs once in a while around town. She is just a natural singer. I don't think she really ever works on her voice because singing to her is just like talking. This is one of the songs from our childhood that we just decided to work out. I used to sing this with an Aunt of mine. I'm not sure if that Aunt is still singing. I hope she still is."
+      "description": "I did this song with one of my cousins. This cousin has a little bit of singing chops. She has sung in front of Google and performs once in a while around town. She is just a natural singer. I don't think she really ever works on her voice because singing to her is just like talking. This is one of the songs from our childhood that we just decided to work out. I used to sing this with an Aunt of mine. I'm not sure if that Aunt is still singing. I hope she still is.",
+      "image": "/images/music/endlessLove.jpg"
     },
     {
       "title": "Into The Unknown",
       "url": "/music/Tanjoco/Into The Unknown.mp3",
-      "description": "This is a colletion of 4 of my cousins. We did this one night when we were all hanging out. They're all very very raw, but they're also very good. I had a great time recording them that night. I hope to have more nights like that where I can record my cousins."
+      "description": "This is a colletion of 4 of my cousins. We did this one night when we were all hanging out. They're all very very raw, but they're also very good. I had a great time recording them that night. I hope to have more nights like that where I can record my cousins.",
+      "image": "/images/music/intoTheUnknown.jpg"
     },
     {
       "title": "Lava",
@@ -802,12 +863,14 @@
     {
       "title": "Weak",
       "url": "/music/Tanjoco/Weak.mp3",
-      "description": "Four of my girl cousins wanted to do a song together on a cousins hangout. They decided on doing Weak by SWV. I think they did a very good job, I'm super proud of them and am wonderfully happy about how they performed. We did this in one night. They girls are not profesional singers or anything, but I think they did an outstanding job. In fact I think I had more fun recording them then they did recording, lol!"
+      "description": "Four of my girl cousins wanted to do a song together on a cousins hangout. They decided on doing Weak by SWV. I think they did a very good job, I'm super proud of them and am wonderfully happy about how they performed. We did this in one night. They girls are not profesional singers or anything, but I think they did an outstanding job. In fact I think I had more fun recording them then they did recording, lol!",
+      "image": "/images/music/weak.jpg"
     },
     {
       "title": "You Are the Reason",
       "url": "/music/Tanjoco/You Are the Reason.mp3",
-      "description": "I had my cousin over for an event in our lives and while he was here he recorded a couple songs with me. This one is You Are The Reason from Calum Scott. Since I had already recorded it, he was able to just jump in and do the lead. He did a great job. It's been years since he recorded with me and I think he did an expectional job at it."
+      "description": "I had my cousin over for an event in our lives and while he was here he recorded a couple songs with me. This one is You Are The Reason from Calum Scott. Since I had already recorded it, he was able to just jump in and do the lead. He did a great job. It's been years since he recorded with me and I think he did an expectional job at it.",
+      "image": "/images/music/youAreTheReason.jpg"
     },
     {
       "title": "You Raise Me Up",

@@ -2,6 +2,30 @@ import Theme from "../theme/Theme";
 
 export type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
+export type Audio = {
+  title: string;
+  url: string;
+  description: string;
+  image?: string;
+};
+
+export type AudioHolderProps = {
+  data: Audio[];
+  callback: (audioData: AudioData) => void;
+};
+export type AudioProps = {
+  data: AudioData;
+  callback: (audioData: AudioData) => void;
+};
+
+export type AudioData = {
+  title: string;
+  url: string;
+  description: string;
+  image?: string;
+  add?: boolean;
+};
+
 export type VideoData = {
   title: string;
   actualVideo: string;
@@ -29,13 +53,6 @@ export type Deguzman53Card = {
   description: string;
 };
 
-export type Audio = {
-  title: string;
-  url: string;
-  description: string;
-  image?: string;
-};
-
 export type Deguzman53 = {
   cards: Deguzman53Card[];
   videos: Videos[];
@@ -47,6 +64,8 @@ export type UpdatePageProps = {
   content: string;
   images: string[];
   videos?: Videos[];
+  music?: Audio[];
+  callback?: (data: AudioData) => void;
 };
 
 export type CardData = {
