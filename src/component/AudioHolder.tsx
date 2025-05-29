@@ -12,6 +12,7 @@ const AudioHolder = ({ data, callback }: AudioHolderProps) => {
     } else {
       const songs = data;
       for (let i = 0; i < songs.length; i++) {
+        songs[i].id = i.toString();
         songsArray.push(
           <Audio key={`song${i}`} data={songs[i]} callback={callback} />
         );

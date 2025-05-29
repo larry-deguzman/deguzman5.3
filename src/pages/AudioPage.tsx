@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Box, Flex, IconButton, Text } from "@chakra-ui/react";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -29,6 +30,10 @@ const AudioPage = ({ callback }: Props) => {
   const setCallback = (data: AudioData) => {
     callback(data);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <>

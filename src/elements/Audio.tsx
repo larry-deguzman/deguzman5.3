@@ -1,6 +1,7 @@
+import { useRef } from "react";
 import { Box, Image, Text, Button, HStack, Spacer } from "@chakra-ui/react";
 // import { Link as RouterLink } from "react-router-dom";
-import { PiSpeakerSimpleLowBold } from "react-icons/pi";
+// import { PiSpeakerSimpleLowBold } from "react-icons/pi";
 import { TiPlus } from "react-icons/ti";
 
 import { useColorContext } from "../context/Color";
@@ -15,12 +16,13 @@ import type {
 
 import CardGlare from "../images/CardGlare.png";
 
-const Video = ({ data, callback }: AudioProps) => {
+const AudioElement = ({ data, callback }: AudioProps) => {
+  const ref = useRef<HTMLDivElement>(null);
   const prime = useColorContext() as ColorKey;
   if (!data) {
     return <div>Loading...</div>;
   }
-  const { title, url, description, image } = data as Audio;
+  const { title, url, description, image, id } = data as Audio;
   const backgroundColor = Theme().colors[prime].lightest;
 
   const setUpCallback = (add: boolean) => {
@@ -29,13 +31,27 @@ const Video = ({ data, callback }: AudioProps) => {
       url,
       title,
       image: image ? image : undefined,
+      id,
       add,
     };
     callback(pack);
+    if (ref.current) {
+      ref.current.style.display = "none";
+    }
+  };
+
+  const getFolder = () => {
+    const arr = data.url.split("/");
+    let folder = arr[arr.length - 2];
+    if (!isNaN(Number(folder))) {
+      folder += "s";
+    }
+    return folder.charAt(0).toUpperCase() + folder.slice(1);
   };
 
   return (
     <Box
+      ref={ref}
       id="Card"
       w="319px"
       mt={10}
@@ -57,14 +73,21 @@ const Video = ({ data, callback }: AudioProps) => {
           alt="CardGlare"
         />
       )}
-      <Text p={10} fontSize={20} fontWeight="bold" color={`${prime}.darkest`}>
-        {title}
-      </Text>
+
+      <HStack spacing={2} align="center">
+        <Text p={10} fontSize={20} fontWeight="bold" color={`${prime}.darkest`}>
+          {title}
+        </Text>
+        <Text as="span" fontWeight="bold" fontSize={14} color={`${prime}.dark`}>
+          {getFolder()}
+        </Text>
+      </HStack>
       <Text p={10} fontSize={12} color={`${prime}.darkest`}>
         {description}
       </Text>
       <HStack spacing={2}>
         <Box>
+          {/*}
           <Button
             onClick={() => {
               setUpCallback(false);
@@ -86,6 +109,7 @@ const Video = ({ data, callback }: AudioProps) => {
               <Text>Listen</Text>
             </HStack>
           </Button>
+          */}
         </Box>
         <Spacer />
         <Button
@@ -114,7 +138,7 @@ const Video = ({ data, callback }: AudioProps) => {
   );
 };
 
-export default Video;
+export default AudioElement;
 // /images/music/breadIf.jpg
 // as={RouterLink}
 // to={link}

@@ -2,10 +2,27 @@ import Theme from "../theme/Theme";
 
 export type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
+export type PlaylistContextType = {
+  playlist: PlaylistItem[];
+  addToPlaylist: (item: PlaylistItem) => void;
+  removeFromPlaylist: (id: string) => void;
+  clearPlaylist: () => void;
+  setPlaylist: React.Dispatch<React.SetStateAction<PlaylistItem[]>>; // <-- add this
+};
+
+export type PlaylistItem = {
+  id: string;
+  title: string;
+  url: string;
+  isPlaying?: boolean;
+  hasPlayed?: boolean;
+  // add other fields as needed
+};
 export type Audio = {
   title: string;
   url: string;
   description: string;
+  id: string;
   image?: string;
 };
 
@@ -21,7 +38,8 @@ export type AudioProps = {
 export type AudioData = {
   title: string;
   url: string;
-  description: string;
+  description?: string;
+  id: string;
   image?: string;
   add?: boolean;
 };
