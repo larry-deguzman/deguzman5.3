@@ -40,12 +40,8 @@ function App() {
   const prime = useColorContext() as ColorKey;
   const player = useRef<HTMLAudioElement>(null);
   const { playlist, addToPlaylist, setPlaylist, clearPlaylist } = usePlaylist();
-  // , removeFromPlaylist, clearPlaylist,
   const root = document.getElementById("root");
-  // console.log("Theme", Theme().colors[prime].darkest);
-  if (root) {
-    root.style.backgroundColor = Theme().colors[prime].darkest;
-  }
+  if (root) root.style.backgroundColor = Theme().colors[prime].darkest;
   document.body.style.backgroundColor = Theme().colors[prime].darkest;
 
   const data = useGetJSON({});

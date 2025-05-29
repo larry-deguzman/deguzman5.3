@@ -31,13 +31,16 @@ const AudioPage = ({ callback }: Props) => {
     callback(data);
   };
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // });
-
   return (
     <>
-      <Flex mb={20} align="center">
+      <Flex
+        mb={20}
+        align="center"
+        position="fixed"
+        bg={`${prime}.darkest`}
+        zIndex={500}
+        w="100%"
+      >
         <IconButton
           onClick={() => {
             navigate(-1);
@@ -51,12 +54,19 @@ const AudioPage = ({ callback }: Props) => {
           Back to Main
         </Text>
       </Flex>
-      <Box>
+      <Box
+        position="fixed"
+        bg={`${prime}.darkest`}
+        zIndex={500}
+        top={[61, 67, 74, 82, 103, 114, 124]}
+        w="100%"
+        p={4}
+      >
         <Text className="title-text" color={`${prime}.lightest`}>
           {title}
         </Text>
       </Box>
-      <Box>
+      <Box position="relative" id="audioHolder" top={74}>
         <AudioHolder data={music ?? []} callback={setCallback} />
       </Box>
     </>
@@ -64,16 +74,3 @@ const AudioPage = ({ callback }: Props) => {
 };
 
 export default AudioPage;
-/*
-You can customize ReactPlayer with props like:
-
-controls (true/false)
-
-playing (autoplay)
-
-loop
-
-volume
-
-width, height, etc.
-*/
