@@ -13,6 +13,7 @@ dist-ssr
 *.local
 public/music/
 public/test/
+Notes.txt
 
 # Editor directories and files
 .vscode/*
