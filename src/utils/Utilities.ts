@@ -1,4 +1,4 @@
-import type { PlaylistItem } from "../types/GenericTypes";
+import type { Audio } from "../types/GenericTypes";
 
 export function getRandomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -13,37 +13,20 @@ export function shuffleArray<T>(array: T[]): T[] {
   return arr;
 }
 
-const PlayListHelp = {
-  shouldIdBeCurrent: (playlist: PlaylistItem[]): boolean => {
-    // console.log("Utilities/shouldIdBeCurrent", playlist);
-    // console.log("Utilities/shouldIdBeCurrent/item", item);
+export function getFolderNameFromUrl(url: string): string {
+  const parts = url.split("/");
+  const folderName = parts[parts.length - 2]; // Assuming the folder is the second last part
+  return folderName;
+}
 
-    if (playlist.length === 0) {
-      return true;
-    } else if (playlist.length === 1) {
-      if (playlist[0].isPlaying) {
-        return false;
-      } else if (playlist[0].hasPlayed) {
-        return true;
-      } else {
-        return true;
-      }
+export function sortPlaylistByFolder(playlist: Audio[]) {
+  const grouped: { [folder: string]: Audio[] } = {};
+  for (let i = 0; i < playlist.length; i++) {
+    const folder = getFolderNameFromUrl(playlist[i].url);
+    if (!grouped[folder]) {
+      grouped[folder] = [];
     }
-    const lastItem = playlist[playlist.length - 1];
-    if (lastItem.isPlaying) {
-      return false;
-    } else if (lastItem.hasPlayed) {
-      return true;
-    }
-    return true;
-  },
-  setAllPlayed: (playlist: PlaylistItem[]): PlaylistItem[] => {
-    return playlist.map((item) => ({
-      ...item,
-      hasPlayed: true,
-      isPlaying: false,
-    }));
-  },
-};
-
-export { PlayListHelp };
+    grouped[folder].push(playlist[i]);
+  }
+  return grouped;
+}

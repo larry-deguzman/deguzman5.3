@@ -27,7 +27,7 @@ export type Audio = {
 };
 
 export type AudioHolderProps = {
-  data: Audio[];
+  data: Audio[] | { [folder: string]: Audio[] };
   callback: (audioData: AudioData) => void;
 };
 export type AudioProps = {

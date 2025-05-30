@@ -1,31 +1,59 @@
 // import { useEffect } from "react";
-import { Box, Flex, IconButton, Text } from "@chakra-ui/react";
+import { useState } from "react";
+import { Box, Flex, IconButton, Text, HStack, Button } from "@chakra-ui/react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { RiArrowLeftLine } from "react-icons/ri";
+import { MdOutlineWidthNormal } from "react-icons/md";
+import { FaShuffle, FaFolderOpen } from "react-icons/fa6";
+
 // this is called remix icons
 import { useColorContext } from "../context/Color";
 import type {
   UpdatePageProps,
   ColorKey,
   AudioData,
+  Audio,
 } from "../types/GenericTypes";
 
 import AudioHolder from "../component/AudioHolder";
+import { sortPlaylistByFolder, shuffleArray } from "../utils/Utilities";
 
 import "../css/Universal.css";
+import AudioFolderHolder from "../component/AudioFolderHolder";
 
 type Props = {
   callback: (data: AudioData) => void;
 };
 
 const AudioPage = ({ callback }: Props) => {
+  // console.log(callback);
+  const TYPE = {
+    NORMAL: "normal",
+    SHUFFLE: "shuffle",
+    BY_FOLDER: "byFolder",
+  };
+  const [sortType, setSortType] = useState<string>(TYPE.NORMAL);
+
   const prime = useColorContext() as ColorKey;
   const location = useLocation();
   const navigate = useNavigate();
   const info = location.state as UpdatePageProps;
   // console.log("AudioPage", location);
   const { title, music } = info;
+  const sortedMusic: { [folder: string]: Audio[] } | Audio[] = (() => {
+    switch (sortType) {
+      case TYPE.BY_FOLDER:
+        // TODO: implement sorting by folder
+        return sortPlaylistByFolder(music ?? []);
+      case TYPE.SHUFFLE:
+        // TODO: implement shuffling
+        return shuffleArray(music ?? []);
+      default:
+        // TODO: implement default sorting
+        return music ?? [];
+    }
+  })();
 
   const setCallback = (data: AudioData) => {
     callback(data);
@@ -62,12 +90,63 @@ const AudioPage = ({ callback }: Props) => {
         w="100%"
         p={4}
       >
-        <Text className="title-text" color={`${prime}.lightest`}>
-          {title}
-        </Text>
+        <HStack spacing={4}>
+          <Text className="title-text" color={`${prime}.lightest`}>
+            {title}
+          </Text>
+          {sortType !== "normal" && (
+            <>
+              <Button
+                ml={10}
+                mr={10}
+                onClick={() => {
+                  setSortType(TYPE.NORMAL);
+                }}
+              >
+                <MdOutlineWidthNormal />
+                &nbsp;Normal
+              </Button>
+              {(sortType !== TYPE.SHUFFLE || sortType !== TYPE.BY_FOLDER) && (
+                <Text> • </Text>
+              )}
+            </>
+          )}
+          {sortType !== "shuffle" && (
+            <>
+              <Button
+                ml={10}
+                mr={10}
+                onClick={() => {
+                  setSortType(TYPE.SHUFFLE);
+                }}
+              >
+                <FaShuffle />
+                &nbsp; Shuffle
+              </Button>
+              {sortType !== TYPE.BY_FOLDER && <Text> • </Text>}
+            </>
+          )}
+          {sortType !== "byFolder" && (
+            <Button
+              ml={10}
+              onClick={() => {
+                setSortType(TYPE.BY_FOLDER);
+              }}
+            >
+              <FaFolderOpen />
+              &nbsp; Age/Type
+            </Button>
+          )}
+        </HStack>
       </Box>
       <Box position="relative" id="audioHolder" top={74}>
-        <AudioHolder data={music ?? []} callback={setCallback} />
+        {(sortType === "normal" || sortType === "shuffle") &&
+          Array.isArray(sortedMusic) && (
+            <AudioHolder data={sortedMusic ?? []} callback={setCallback} />
+          )}
+        {sortType === "byFolder" && (
+          <AudioFolderHolder data={sortedMusic} callback={setCallback} />
+        )}
       </Box>
     </>
   );

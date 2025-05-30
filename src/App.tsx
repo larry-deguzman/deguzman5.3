@@ -31,7 +31,7 @@ import AudioPage from "./pages/AudioPage";
 import AudioPlayer from "./elements/AudioPlayer";
 import AudioPlayList from "./elements/AudioPlayer/AudioPlayList";
 
-import { shuffleArray } from "./utils/Utilities";
+// import { shuffleArray } from "./utils/Utilities";
 
 type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
@@ -46,9 +46,9 @@ function App() {
 
   const data = useGetJSON({});
   // console.log("data", data);
-  if (data && data.music) {
-    data.music = shuffleArray(data.music);
-  }
+  // if (data && data.music) {
+  //   data.music = shuffleArray(data.music);
+  // }
   const navigate = useNavigate();
   const playlistCallback = (song: PlaylistItem) => {
     player.current?.pause();
