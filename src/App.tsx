@@ -317,7 +317,7 @@ function App() {
             element={<AudioPage callback={audioCallback} />}
           />
         </Routes>
-        <Footer />
+        <Footer showingAudio={currentSong !== null} />
         {currentSong && (
           <>
             <AudioPlayer

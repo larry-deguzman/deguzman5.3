@@ -78,7 +78,12 @@ const AudioElement = ({ data, callback }: AudioProps) => {
         <Text p={10} fontSize={20} fontWeight="bold" color={`${prime}.darkest`}>
           {title}
         </Text>
-        <Text as="span" fontWeight="bold" fontSize={14} color={`${prime}.dark`}>
+        <Text
+          as="span"
+          fontWeight="bold"
+          fontSize={14}
+          color={`${prime}.darkest`}
+        >
           {getFolder()}
         </Text>
       </HStack>

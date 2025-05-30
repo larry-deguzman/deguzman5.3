@@ -10,7 +10,7 @@ const AudioHolder = ({ data, callback }: AudioHolderProps) => {
     if (!data) {
       return null;
     } else {
-      const songs = data;
+      const songs = Array.isArray(data) ? data : [];
       for (let i = 0; i < songs.length; i++) {
         songs[i].id = i.toString();
         songsArray.push(
@@ -32,7 +32,7 @@ const AudioHolder = ({ data, callback }: AudioHolderProps) => {
     360: 1,
   };
   return (
-    <Box margin="auto" w="fit-content" p={0} mt={10}>
+    <Box margin="auto" w="fit-content" p={0} mt={10} mb={130}>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="masonry-grid"

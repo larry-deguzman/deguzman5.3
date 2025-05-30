@@ -5,15 +5,19 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  HStack,
 } from "@chakra-ui/react";
 import Masonry from "react-masonry-css";
 import Audio from "../elements/Audio";
+import { useColorContext } from "../context/Color";
 import type {
   AudioHolderProps,
   Audio as AudioType,
+  ColorKey,
 } from "../types/GenericTypes";
 
 const AudioFolderHolder = ({ data, callback }: AudioHolderProps) => {
+  const prime = useColorContext() as ColorKey;
   const getSongs = (musicData: AudioType[]) => {
     if (!musicData || musicData.length === 0) return null;
     return musicData.map((song, i) => (
@@ -35,15 +39,26 @@ const AudioFolderHolder = ({ data, callback }: AudioHolderProps) => {
   if (typeof data !== "object" || Array.isArray(data)) return null;
 
   return (
-    <Accordion allowMultiple defaultIndex={[0]} w="100%" mt={10} mb={100}>
+    <Accordion allowMultiple defaultIndex={[0]} w="100%" mt={10} mb={130}>
       {Object.keys(data).map((folder) => (
         <AccordionItem key={folder}>
           <h2>
             <AccordionButton>
-              <Box as="span" flex="1" textAlign="left" fontWeight="bold">
-                {fixTitle(folder)}
+              <Box w="100%">
+                <HStack w="100%">
+                  <Box flex="1" textAlign="left" fontWeight="bold">
+                    {fixTitle(folder)}{" "}
+                  </Box>
+                  <Box
+                    width="100%"
+                    height={1}
+                    bg={`${prime}.lightest`}
+                    mx={2}
+                    borderRadius="full"
+                  />
+                  <AccordionIcon />
+                </HStack>
               </Box>
-              <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
