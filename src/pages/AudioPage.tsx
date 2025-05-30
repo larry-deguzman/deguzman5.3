@@ -139,7 +139,11 @@ const AudioPage = ({ callback }: Props) => {
           )}
         </HStack>
       </Box>
-      <Box position="relative" id="audioHolder" top={74}>
+      <Box
+        position="relative"
+        id="audioHolder"
+        top={[120, 74, 74, 74, 74, 74, 74]}
+      >
         {(sortType === "normal" || sortType === "shuffle") &&
           Array.isArray(sortedMusic) && (
             <AudioHolder data={sortedMusic ?? []} callback={setCallback} />
@@ -151,5 +155,6 @@ const AudioPage = ({ callback }: Props) => {
     </>
   );
 };
+// w={[325, 416, 546, 694, 894, 1020, 1428]}
 
 export default AudioPage;
