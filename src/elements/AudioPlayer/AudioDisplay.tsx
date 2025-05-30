@@ -1,15 +1,14 @@
 import { Box, Text } from "@chakra-ui/react";
 import { useColorContext } from "../../context/Color";
-import type { ColorKey } from "../../types/GenericTypes";
+import type { ColorKey, PlaylistItem } from "../../types/GenericTypes";
 import Theme from "../../theme/Theme";
-
-import { usePlaylist } from "../../hooks/Playlist";
 
 type Props = {
   callback: (who: string) => void;
+  song: PlaylistItem | null;
 };
 
-const AudioDisplay = ({ callback }: Props) => {
+const AudioDisplay = ({ callback, song }: Props) => {
   const prime = useColorContext() as ColorKey;
   const dark = Theme().colors[prime].darkest;
   const light = Theme().colors[prime].lightest;
@@ -19,22 +18,6 @@ const AudioDisplay = ({ callback }: Props) => {
   };
   const gap = 5;
 
-  const {
-    playlist,
-    // addToPlaylist,
-    // removeFromPlaylist,
-    // clearPlaylist,
-    // setPlaylist,
-  } = usePlaylist();
-
-  const getSong = () => {
-    for (let i = 0; i < playlist.length; i++) {
-      if (playlist[i].isPlaying) {
-        return playlist[i].title;
-        break;
-      }
-    }
-  };
   return (
     <Box
       onClick={() => {
@@ -56,7 +39,7 @@ const AudioDisplay = ({ callback }: Props) => {
         overflow="hidden"
       >
         <Text ml={8} marginTop={7} color="black" fontSize="md">
-          {getSong()}
+          {song?.title}
         </Text>
       </Box>
     </Box>

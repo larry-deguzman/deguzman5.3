@@ -47,7 +47,7 @@ const AudioPlayer = ({ playerCallback, currentSong }: Props) => {
         player.current?.pause();
         break;
       case "rewindButton":
-        console.log("Rewind button clicked");
+        // console.log("Rewind button clicked");
         if (player.current) {
           if (player.current.currentTime < 3) {
             setIsPlaying(false);
@@ -61,7 +61,7 @@ const AudioPlayer = ({ playerCallback, currentSong }: Props) => {
         }
         break;
       case "ffButton":
-        console.log("Fast forward button clicked");
+        // console.log("Fast forward button clicked");
         setIsPlaying(false);
         player.current?.pause();
         playerCallback("fastForward", song ?? undefined);
@@ -113,7 +113,7 @@ const AudioPlayer = ({ playerCallback, currentSong }: Props) => {
         <CloseButton callback={callback} />
       </Box>
       <Box id="displayBox" left={10} top={30} position="relative">
-        <AudioDisplay callback={callback} />
+        <AudioDisplay callback={callback} song={song} />
       </Box>
       <HStack
         position="absolute"
@@ -136,7 +136,7 @@ const AudioPlayer = ({ playerCallback, currentSong }: Props) => {
       </HStack>
       <audio
         ref={player}
-        src={currentSong?.url ?? undefined}
+        src={song?.url ?? undefined}
         autoPlay
         onPlay={onPlay}
         onPause={onPause}

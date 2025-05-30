@@ -14,6 +14,7 @@ dist-ssr
 public/music/
 public/test/
 Notes.txt
+Notes.md
 
 # Editor directories and files
 .vscode/*
