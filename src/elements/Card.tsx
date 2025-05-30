@@ -20,7 +20,8 @@ const Card = ({ data, callback }: CardProps) => {
 
   const backgroundColor = Theme().colors[prime].lightest;
 
-  const setUpCallback = () => {
+  const setUpCallback = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
     const toSend = {
       title: title,
       content: description,
@@ -41,15 +42,20 @@ const Card = ({ data, callback }: CardProps) => {
       overflow="hidden"
       position="relative"
     >
-      <Image src={Array.isArray(picture) ? picture[0] : picture} alt={title} />
-      <Image
-        left={0}
-        top={0}
-        w="100%"
-        position="absolute"
-        src={CardGlare}
-        alt="CardGlare"
-      />
+      <Button onClick={setUpCallback}>
+        <Image
+          src={Array.isArray(picture) ? picture[0] : picture}
+          alt={title}
+        />
+        <Image
+          left={0}
+          top={0}
+          w="100%"
+          position="absolute"
+          src={CardGlare}
+          alt="CardGlare"
+        />
+      </Button>
       <Text p={10} fontSize={20} fontWeight="bold" color={`${prime}.darkest`}>
         {title}
       </Text>
