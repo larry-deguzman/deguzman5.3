@@ -5,10 +5,10 @@ import Video from "../elements/Video";
 import type { VideoHolderProps, VideoData } from "../types/GenericTypes";
 
 const VideoHolder = ({ data, callback }: VideoHolderProps) => {
-  console.log("VideoHolder", data, callback);
+  // console.log("VideoHolder", data, callback);
 
   const setUpCallback = (videoData: VideoData) => {
-    console.log("VideoHolder/callback", videoData);
+    // console.log("VideoHolder/callback", videoData);
     callback(videoData);
   };
   // Remove setUpCallback and use the callback prop directly if it matches the required type

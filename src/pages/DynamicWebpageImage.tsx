@@ -39,7 +39,14 @@ const DynamicWebpageImage = () => {
 
   return (
     <>
-      <Flex mb={20} align="center">
+      <Flex
+        mb={20}
+        align="center"
+        position="fixed"
+        bg={`${prime}.darkest`}
+        zIndex={500}
+        w="100%"
+      >
         <IconButton
           onClick={() => {
             navigate(-1);
@@ -53,7 +60,14 @@ const DynamicWebpageImage = () => {
           Back to Main
         </Text>
       </Flex>
-      <Box>
+      <Box
+        position="fixed"
+        bg={`${prime}.darkest`}
+        zIndex={500}
+        top={[61, 67, 74, 82, 103, 114, 124]}
+        w="100%"
+        p={4}
+      >
         <Text>
           {title}&nbsp;- &nbsp;
           {
@@ -69,7 +83,7 @@ const DynamicWebpageImage = () => {
         </Text>
       </Box>
       <Box ml={20} mr={20}>
-        <Text fontWeight="bold" mb={10} mt={5}>
+        <Text fontWeight="bold" mb={10} mt={5} paddingTop={100}>
           DESCRIPTION
         </Text>
         <HStack>

@@ -53,6 +53,10 @@ function App() {
   //   data.music = shuffleArray(data.music);
   // }
   const navigate = useNavigate();
+  const videoPageCallback = () => {
+    clearPlaylist();
+    setCurrentSong(null);
+  };
   const playlistCallback = (song: PlaylistItem) => {
     player.current?.pause();
     const firstPart = [];
@@ -163,7 +167,7 @@ function App() {
         break;
       }
       case "fastForward": {
-        console.log("App/playerCallback: fastForward", song);
+        // console.log("App/playerCallback: fastForward", song);
         const updatedPlaylist = [];
         let marker: number = 0;
         if (song) {
@@ -298,7 +302,7 @@ function App() {
         navigateTo = "/systemVideoMonitoring";
         break;
       default:
-        console.log("App:", info.title);
+      // console.log("App:", info.title);
     }
     navigate(navigateTo, { state: additionalInfo });
   };
@@ -323,7 +327,10 @@ function App() {
             element={<Main data={data} callback={callbackFromMain} />}
           />
           <Route path="/updatePage" element={<UpdatePage />} />
-          <Route path="/videos" element={<VideosPage />} />
+          <Route
+            path="/videos"
+            element={<VideosPage callback={videoPageCallback} />}
+          />
           <Route
             path="/audio"
             element={<AudioPage callback={audioCallback} />}

@@ -2,6 +2,10 @@ import Theme from "../theme/Theme";
 
 export type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
+export type VideoPageProps = {
+  callback: () => void;
+};
+
 export type PlaylistContextType = {
   playlist: PlaylistItem[];
   addToPlaylist: (item: PlaylistItem) => void;
