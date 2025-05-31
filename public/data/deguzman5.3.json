@@ -23,6 +23,24 @@
       "picture": "/images/videos.jpg",
       "link": "/main",
       "description": "This is a collection of videos that I have created over the years. It includes a variety of genres and styles, showcasing my growth."
+    },
+    {
+      "title": "Patent - Dynamic Webpage Image",
+      "picture": "/images/US20160203106.jpg",
+      "link": "/main",
+      "description": "A system for converting formatting of display object, including a logic (e.g., a computing device) that can be operable to traverse and record a part of source code or binary data related to a first visible item displayed on a visual output device. The logic can then convert a first data type or data structure that includes the recorded part of source code or binary data to a second data type or data structure that still includes the recorded part of source code or binary data, where the second data type or data structure is related to a second visible item displayable on the visual output device."
+    },
+    {
+      "title": "Patent - Video Monitoring",
+      "picture": "/images/US20190235886A1.jpg",
+      "link": "/main",
+      "description": "One or more computing devices, systems, and/or methods for monitoring a video are provided. For example, the video may be rendered within a canvas overlaying a webpage within a web browser. The video may comprise an opaque portion (e.g., a bike) and a transparent portion (e.g., a transparent background such that the bike appears to be driving across the webpage as the video plays). User input associated with the canvas may be evaluated to determine whether the user input occurs over the opaque portion or the transparent portion. Responsive to the user input occurring over the opaque portion, the web browser may be transitioned from the webpage to a biking website linked to by the video. Responsive to the user input occurring over the transparent portion, the canvas may be closed to terminate the video."
+    },
+    {
+      "title": "Patent - System for Monitoring a Video",
+      "picture": "/images/US20180052528A1.jpg",
+      "link": "/main",
+      "description": "A computer-implemented method monitors a video-based graphic. The method includes displaying a video-based graphic. A position of a pointer interaction is monitored. The method includes determining a designation of a pixel of the video-based graphic at a location of the pointer interaction. An action is performed based on the designation of the pixel of the video-based graphic at a location of the pointer interaction."
     }
   ],
   "videos": [
@@ -974,6 +992,84 @@
       "url": "/music/nephew/My Way.mp3",
       "description": "This song was also done by my nephew. He recorded this at the same time as Meet You There. He requested this song and I think he did a really great job. He's just discovering that he likes singing and I really want to encourage him to follow that path. Singing and music are really great outlets in life. ",
       "image": "/images/music/myWay.jpg"
+    },
+    {
+      "title": "Could I Have This Dance",
+      "url": "/music/mom/Could I Have This Dance.mp3",
+      "description": "My mom wanted to sing this song because at her wedding they didn't finish their first dance to completion. So whenever she would play this song, he would start to dance with her then end it just as abruptly. She just wanted a memory to cherish this interesting time period.",
+      "image": "/images/music/couldIHaveThisDance.jpg"
+    },
+    {
+      "title": "Here I Am",
+      "url": "/music/mom/Here I Am.mp3",
+      "description": "This was a song that reminded my mom of when my father left for the Phillipines. It has a somber and meloncholy feel to it. This was a song that meant a lot to her and she decided to record it."
+    },
+    {
+      "title": "Lay Down Beside Me",
+      "url": "/music/mom/Lay Down Beside Me.mp3",
+      "description": "This was a song that was dedicaded to her 2nd husband. It evokes feelings of having a new someone that cares for you and loves you. This was a feeling that my mom was missing in her life at the time.",
+      "image": "/images/music/layDownBesideMe.jpg"
+    },
+    {
+      "title": "Like Strangers",
+      "url": "/music/mom/Like Strangers.mp3",
+      "description": "This was about one of my mom's friends from college. Even tho they ended up living within the same city half a world away, they never really found time to spend with each other and continually cultivate that friendship. "
+    },
+    {
+      "title": "Make Believe Its Your First Time",
+      "url": "/music/mom/Make Believe Its Your First Time.mp3",
+      "description": "This is my mom's dirty, dirty song. Hahaha, She really loved this song and wanted to record it. She grew up hearing it and I believe it brought back fond memories of the 70's. Unfortunately, my brothers and I explained the song to her and it's meaning AFTER recording it. It's a bit of fun at my moms expense, lol. Sorry mom.",
+      "image": "/images/music/makeBelieveItsYourFirstTime.jpg"
+    },
+    {
+      "title": "Make You Feel My Love (mom)",
+      "url": "/music/mom/Make You Feel My Love (mom).mp3",
+      "description": "This was had to do with my dad. She just wanted to sing this because it reminded her of the times just after my father left for the Phillipines. "
+    },
+    {
+      "title": "My One True Friend",
+      "url": "/music/mom/My One True Friend.mp3",
+      "description": "This was a bout a friend that my mom met many years ago. During that time they became very good friends and their friendship flourished. Then my mom met her future husband and my mom and her friends friendship faltered. Many years later that friend came back and sent my mom this song. Their friendship is on the mend. It's a current on going situation so we'll see where it ends up.",
+      "image": "/images/music/myOneTrueFriend.jpg"
+    },
+    {
+      "title": "Solitaire",
+      "url": "/music/mom/Solitaire.mp3",
+      "description": "This is a song about one of my mom's friends. He's an interesting guy. He's so kind and gentle and is very much a gentleman, but he for some reason doesn't like people. He does however love god and follows all of gods ways. "
+    },
+    {
+      "title": "The Long And Winding Road",
+      "url": "/music/mom/The Long And Winding Road.mp3",
+      "description": "My mom wanted to sing this song. This was reminiscent of the time after my father left for the Phillipines. Then my mom met her 2nd husband and they were friends for 13 years prior to getting married. They weren't dating or anything, but they were friends. This song is a reminder that we need to strike while the iron is hot and not to waste so much time. ",
+      "image": "/images/music/theLongAndWindingRoad.jpg"
+    },
+    {
+      "title": "When You Told Me You Loved Me",
+      "url": "/music/mom/When You Told Me You Loved Me.mp3",
+      "description": "My mom just liked this song. This reflects so many hearts broken because they didn't know how to communicate with each other. In the end, this song has no real relation to her life, but she can see it in other's lives."
+    },
+    {
+      "title": "You (for Victor)",
+      "url": "/music/mom/You (for Victor).mp3",
+      "description": "My mom realized that she had been singing for her whole life and that she had never dedicated a song to her husband. This song was the song that reminded her how much she absolutely loved her husband.",
+      "image": "/images/music/you.jpg"
+    },
+    {
+      "title": "You And Me Against The World",
+      "url": "/music/mom/You And Me Against The World.mp3",
+      "description": "This was a song that my mom wanted to sing with her son. not me, her other son. When he was in third grade my mom and him heard this song on the radio. He said, &quot;This is is going to be our song mommy.&quot; and my mom said yes it will be. Many many years later, they came to the house and recorded this song. "
+    },
+    {
+      "title": "You Needed Me",
+      "url": "/music/mom/You Needed Me.mp3",
+      "description": "This was a song that was dedicated to my dad. ",
+      "image": "/images/music/youNeededMe.jpg"
+    },
+    {
+      "title": "You Took My Heart Away",
+      "url": "/music/mom/You Took My Heart Away.mp3",
+      "description": "This was a song that was dedicated to her 2nd husband. This song came about on her second anniversary that she was absolutely in love with him.",
+      "image": "/images/music/youTookMyHeartAway.jpg"
     }
   ]
 }

@@ -28,6 +28,9 @@ import type {
 import UpdatePage from "./component/UpdatePage";
 import VideosPage from "./pages/VideosPage";
 import AudioPage from "./pages/AudioPage";
+import DynamicWebpageImage from "./pages/DynamicWebpageImage";
+import VideoMonitoring from "./pages/VideoMonitoring";
+import SystemVideoMonitoring from "./pages/SystemVideoMonitoring";
 import AudioPlayer from "./elements/AudioPlayer";
 import AudioPlayList from "./elements/AudioPlayer/AudioPlayList";
 
@@ -285,6 +288,15 @@ function App() {
         navigateTo = "/audio";
         break;
       }
+      case "Patent - Dynamic Webpage Image":
+        navigateTo = "/dynamicWebpageImage";
+        break;
+      case "Patent - Video Monitoring":
+        navigateTo = "/videoMonitoring";
+        break;
+      case "Patent - System for Monitoring a Video":
+        navigateTo = "/systemVideoMonitoring";
+        break;
       default:
         console.log("App:", info.title);
     }
@@ -315,6 +327,15 @@ function App() {
           <Route
             path="/audio"
             element={<AudioPage callback={audioCallback} />}
+          />
+          <Route
+            path="/dynamicWebpageImage"
+            element={<DynamicWebpageImage />}
+          />
+          <Route path="/videoMonitoring" element={<VideoMonitoring />} />
+          <Route
+            path="/systemVideoMonitoring"
+            element={<SystemVideoMonitoring />}
           />
         </Routes>
         <Footer showingAudio={currentSong !== null} />

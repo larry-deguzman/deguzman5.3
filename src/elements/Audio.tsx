@@ -83,6 +83,8 @@ const AudioElement = ({ data, callback }: AudioProps) => {
           fontWeight="bold"
           fontSize={14}
           color={`${prime}.darkest`}
+          mr={10}
+          ml="auto"
         >
           {getFolder()}
         </Text>
