@@ -5,7 +5,7 @@ import {
   IconButton,
   Text,
   HStack,
-  Image,
+  // Image,
   Link,
 } from "@chakra-ui/react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -13,6 +13,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { RiArrowLeftLine } from "react-icons/ri";
 import { useColorContext } from "../context/Color";
 import type { UpdatePageProps, ColorKey } from "../types/GenericTypes";
+
+import SideScrollingImagePane from "../component/SideScrollingImagePane";
 
 const VideoMonitoring = () => {
   const prime = useColorContext() as ColorKey;
@@ -34,6 +36,21 @@ const VideoMonitoring = () => {
     "/figure6b.jpg",
     "/figure6c.jpg",
     "/figure7.jpg",
+  ];
+
+  const prepend = "/images/US20190235886A1";
+  const images = [
+    { src: imageArray[1], alt: "Figure 1" },
+    { src: imageArray[2], alt: "Figure 2" },
+    { src: imageArray[3], alt: "Figure 3" },
+    { src: imageArray[4], alt: "Figure 4" },
+    { src: imageArray[5], alt: "Figure 5A" },
+    { src: imageArray[6], alt: "Figure 5B" },
+    { src: imageArray[7], alt: "Figure 5C" },
+    { src: imageArray[8], alt: "Figure 6A" },
+    { src: imageArray[9], alt: "Figure 6B" },
+    { src: imageArray[10], alt: "Figure 6C" },
+    { src: imageArray[11], alt: "Figure 7" },
   ];
 
   useEffect(() => {
@@ -223,6 +240,7 @@ const VideoMonitoring = () => {
         <Text fontWeight="bold" mb={10} mt={5}>
           DESCRIPTION OF THE DRAWINGS
         </Text>
+        <SideScrollingImagePane prepend={prepend} images={images} />
         <HStack>
           <Text mb={10}>[0008]</Text>
           <Text mb={10}>
@@ -239,24 +257,8 @@ const VideoMonitoring = () => {
             FIG. 1 is an illustration of a scenario involving various examples
             of networks that may connect servers and clients.
           </Text>
-          <Image
-            src={imageArray[0] + imageArray[1]}
-            alt="Figure 1"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
         </HStack>
         <HStack>
-          <Image
-            src={imageArray[0] + imageArray[2]}
-            alt="Figure 2"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
           <Text mb={10}>[0010]</Text>
           <Text mb={10}>
             FIG. 2 is an illustration of a scenario involving an example
@@ -271,24 +273,8 @@ const VideoMonitoring = () => {
             configuration of a client that may utilize and/or implement at least
             a portion of the techniques presented herein.
           </Text>
-          <Image
-            src={imageArray[0] + imageArray[3]}
-            alt="Figure 3"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
         </HStack>
         <HStack>
-          <Image
-            src={imageArray[0] + imageArray[4]}
-            alt="Figure 4"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
           <Text mb={10}>[0012]</Text>
           <Text mb={10}>
             FIG. 4 is a flow chart illustrating an example method for monitoring
@@ -302,24 +288,8 @@ const VideoMonitoring = () => {
             for monitoring a video, where the video is rendered within a canvas
             overlaying a webpage.
           </Text>
-          <Image
-            src={imageArray[0] + imageArray[5]}
-            alt="Figure 5A"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
         </HStack>
         <HStack>
-          <Image
-            src={imageArray[0] + imageArray[6]}
-            alt="Figure 5B"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
           <Text mb={10}>[0014]</Text>
           <Text mb={10}>
             FIG. 5B is a component block diagram illustrating an example system
@@ -334,24 +304,8 @@ const VideoMonitoring = () => {
             for monitoring a video, where a web browser is transitioned to a
             webpage linked to by the video.
           </Text>
-          <Image
-            src={imageArray[0] + imageArray[7]}
-            alt="Figure 5C"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
         </HStack>
         <HStack>
-          <Image
-            src={imageArray[0] + imageArray[8]}
-            alt="Figure 6A"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
           <Text mb={10}>[0016]</Text>
           <Text mb={10}>
             FIG. 6A is a component block diagram illustrating an example system
@@ -366,24 +320,8 @@ const VideoMonitoring = () => {
             for monitoring a video, where a transparency value of a portion of
             the video is identified.
           </Text>
-          <Image
-            src={imageArray[0] + imageArray[9]}
-            alt="Figure 6B"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
         </HStack>
         <HStack>
-          <Image
-            src={imageArray[0] + imageArray[10]}
-            alt="Figure 6C"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
           <Text mb={10}>[0018]</Text>
           <Text mb={10}>
             FIG. 6C is a component block diagram illustrating an example system
@@ -398,14 +336,6 @@ const VideoMonitoring = () => {
             non-transitory machine readable medium in accordance with one or
             more of the provisions set forth herein.
           </Text>
-          <Image
-            src={imageArray[0] + imageArray[11]}
-            alt="Figure 7"
-            loading="lazy"
-            shadow="md"
-            boxSize={200}
-            objectFit="cover"
-          />
         </HStack>
         <Text fontWeight="bold" mb={10} mt={5}>
           DETAILED DESCRIPTION

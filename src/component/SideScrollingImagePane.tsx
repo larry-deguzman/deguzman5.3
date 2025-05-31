@@ -18,10 +18,11 @@ export default function SideScrollingImagePane({
         overflowX="auto"
         whiteSpace="nowrap"
         p={4} // adjust as needed
+        pb={15}
         maxWidth="800px" // adjust as needed
         width="100%"
         borderRadius="md"
-        borderWidth="1px"
+        borderWidth="none"
         borderColor="gray.200"
         position="relative"
         bg={`${prime}.darkest`}
