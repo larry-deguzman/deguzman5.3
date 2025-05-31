@@ -21,6 +21,7 @@ import { sortPlaylistByFolder, shuffleArray } from "../utils/Utilities";
 
 import "../css/Universal.css";
 import AudioFolderHolder from "../component/AudioFolderHolder";
+import { usePlaylist } from "../hooks/Playlist";
 
 type Props = {
   callback: (data: AudioData) => void;
@@ -35,6 +36,7 @@ const AudioPage = ({ callback }: Props) => {
   };
   const [sortType, setSortType] = useState<string>(TYPE.NORMAL);
 
+  const { playlist } = usePlaylist();
   const prime = useColorContext() as ColorKey;
   const location = useLocation();
   const navigate = useNavigate();
@@ -152,6 +154,7 @@ const AudioPage = ({ callback }: Props) => {
           <AudioFolderHolder data={sortedMusic} callback={setCallback} />
         )}
       </Box>
+      {playlist.length > 0 && <Box width="100%" paddingBottom={100}></Box>}
     </>
   );
 };

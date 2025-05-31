@@ -28,6 +28,9 @@ import type {
 import UpdatePage from "./component/UpdatePage";
 import VideosPage from "./pages/VideosPage";
 import AudioPage from "./pages/AudioPage";
+import DynamicWebpageImage from "./pages/DynamicWebpageImage";
+import VideoMonitoring from "./pages/VideoMonitoring";
+import SystemVideoMonitoring from "./pages/SystemVideoMonitoring";
 import AudioPlayer from "./elements/AudioPlayer";
 import AudioPlayList from "./elements/AudioPlayer/AudioPlayList";
 
@@ -50,6 +53,10 @@ function App() {
   //   data.music = shuffleArray(data.music);
   // }
   const navigate = useNavigate();
+  const videoPageCallback = () => {
+    clearPlaylist();
+    setCurrentSong(null);
+  };
   const playlistCallback = (song: PlaylistItem) => {
     player.current?.pause();
     const firstPart = [];
@@ -160,7 +167,7 @@ function App() {
         break;
       }
       case "fastForward": {
-        console.log("App/playerCallback: fastForward", song);
+        // console.log("App/playerCallback: fastForward", song);
         const updatedPlaylist = [];
         let marker: number = 0;
         if (song) {
@@ -285,8 +292,17 @@ function App() {
         navigateTo = "/audio";
         break;
       }
+      case "Patent - Dynamic Webpage Image":
+        navigateTo = "/dynamicWebpageImage";
+        break;
+      case "Patent - Video Monitoring":
+        navigateTo = "/videoMonitoring";
+        break;
+      case "Patent - System for Monitoring a Video":
+        navigateTo = "/systemVideoMonitoring";
+        break;
       default:
-        console.log("App:", info.title);
+      // console.log("App:", info.title);
     }
     navigate(navigateTo, { state: additionalInfo });
   };
@@ -311,10 +327,22 @@ function App() {
             element={<Main data={data} callback={callbackFromMain} />}
           />
           <Route path="/updatePage" element={<UpdatePage />} />
-          <Route path="/videos" element={<VideosPage />} />
+          <Route
+            path="/videos"
+            element={<VideosPage callback={videoPageCallback} />}
+          />
           <Route
             path="/audio"
             element={<AudioPage callback={audioCallback} />}
+          />
+          <Route
+            path="/dynamicWebpageImage"
+            element={<DynamicWebpageImage />}
+          />
+          <Route path="/videoMonitoring" element={<VideoMonitoring />} />
+          <Route
+            path="/systemVideoMonitoring"
+            element={<SystemVideoMonitoring />}
           />
         </Routes>
         <Footer showingAudio={currentSong !== null} />

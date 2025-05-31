@@ -4,7 +4,12 @@ import Card from "../elements/Card";
 
 import "../css/CardHolder.css";
 
-import type { CardProps, UpdatePageProps } from "../types/GenericTypes";
+import type {
+  CardProps,
+  UpdatePageProps,
+  Deguzman53,
+} from "../types/GenericTypes";
+import { shuffleArray } from "../utils/Utilities";
 
 const CardHolder = ({ data, callback }: CardProps) => {
   // console.log("cardholder/data", data);
@@ -12,6 +17,10 @@ const CardHolder = ({ data, callback }: CardProps) => {
   const setUpCallback = (info: UpdatePageProps) => {
     callback(info);
   };
+
+  if (data && "cards" in data && Array.isArray((data as Deguzman53).cards)) {
+    (data as Deguzman53).cards = shuffleArray((data as Deguzman53).cards);
+  }
   /* eslint-disable @typescript-eslint/no-explicit-any */
   const getCards = () => {
     if (!data) {
