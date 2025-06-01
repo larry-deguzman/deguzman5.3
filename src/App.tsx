@@ -33,6 +33,7 @@ import VideoMonitoring from "./pages/VideoMonitoring";
 import SystemVideoMonitoring from "./pages/SystemVideoMonitoring";
 import AudioPlayer from "./elements/AudioPlayer";
 import AudioPlayList from "./elements/AudioPlayer/AudioPlayList";
+import MyTechJourney from "./pages/MyTechJourney";
 
 // import { shuffleArray } from "./utils/Utilities";
 
@@ -301,6 +302,9 @@ function App() {
       case "Patent - System for Monitoring a Video":
         navigateTo = "/systemVideoMonitoring";
         break;
+      case "My Tech Journey":
+        navigateTo = "/myTechJourney";
+        break;
       default:
       // console.log("App:", info.title);
     }
@@ -344,6 +348,7 @@ function App() {
             path="/systemVideoMonitoring"
             element={<SystemVideoMonitoring />}
           />
+          <Route path="/myTechJourney" element={<MyTechJourney />} />
         </Routes>
         <Footer showingAudio={currentSong !== null} />
         {currentSong && (

@@ -13,6 +13,12 @@
       "description": "Yahoo! was a web services provider that offered a variety of services, including search, email, and news. They were known for their web portal and search engine."
     },
     {
+      "title": "My Tech Journey",
+      "picture": "/images/myTechJourney.jpg",
+      "link": "/main",
+      "description": "My tech journey started around 2002. It’s a story for sure that starts with me just trying to save money, lol. Click below to check it out."
+    },
+    {
       "title": "Personal Music",
       "picture": "/images/music.jpg",
       "link": "/main",
