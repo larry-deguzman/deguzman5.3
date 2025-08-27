@@ -31,9 +31,11 @@ import AudioPage from "./pages/AudioPage";
 import DynamicWebpageImage from "./pages/DynamicWebpageImage";
 import VideoMonitoring from "./pages/VideoMonitoring";
 import SystemVideoMonitoring from "./pages/SystemVideoMonitoring";
+import MyTechJourney from "./pages/MyTechJourney";
+import Yahoo from "./pages/Yahoo";
 import AudioPlayer from "./elements/AudioPlayer";
 import AudioPlayList from "./elements/AudioPlayer/AudioPlayList";
-import MyTechJourney from "./pages/MyTechJourney";
+import Apex from "./pages/Apex";
 
 // import { shuffleArray } from "./utils/Utilities";
 
@@ -293,6 +295,9 @@ function App() {
         navigateTo = "/audio";
         break;
       }
+      case "Yahoo!":
+        navigateTo = "yahoo";
+        break;
       case "Patent - Dynamic Webpage Image":
         navigateTo = "/dynamicWebpageImage";
         break;
@@ -304,6 +309,9 @@ function App() {
         break;
       case "My Tech Journey":
         navigateTo = "/myTechJourney";
+        break;
+      case "Apex":
+        navigateTo = "/apex";
         break;
       default:
       // console.log("App:", info.title);
@@ -339,6 +347,7 @@ function App() {
             path="/audio"
             element={<AudioPage callback={audioCallback} />}
           />
+          <Route path="yahoo" element={<Yahoo />} />
           <Route
             path="/dynamicWebpageImage"
             element={<DynamicWebpageImage />}
@@ -348,6 +357,7 @@ function App() {
             path="/systemVideoMonitoring"
             element={<SystemVideoMonitoring />}
           />
+          <Route path="/apex" element={<Apex />} />
           <Route path="/myTechJourney" element={<MyTechJourney />} />
         </Routes>
         <Footer showingAudio={currentSong !== null} />

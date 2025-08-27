@@ -1,14 +1,14 @@
 {
   "cards": [
     {
-      "title": "C3D Enterprises",
-      "picture": "/images/C3D.jpg",
+      "title": "Apex",
+      "picture": "/images/apex.jpg",
       "link": "/main",
-      "description": "C3D Enterprises was a company that specialized in work in the music industry. They were known for roster of artists."
+      "description": "Apex was singing group starting in 1992. We were known for being an acapella group that sang a variety of music."
     },
     {
       "title": "Yahoo!",
-      "picture": "/images/C3D.jpg",
+      "picture": "/images/yahoo.jpg",
       "link": "/main",
       "description": "Yahoo! was a web services provider that offered a variety of services, including search, email, and news. They were known for their web portal and search engine."
     },
@@ -753,6 +753,11 @@
       "image": "/images/music/she.jpg"
     },
     {
+      "title": "Skate",
+      "url": "/music/2020/Skate.mp3",
+      "description": ""
+    },
+    {
       "title": "Some Things I'll Never Know",
       "url": "/music/2020/Some Things I'll Never Know.mp3",
       "description": "I recently heard this song on YouTube and really liked it. The words and the message is pretty sad. I feel the pain of Teddy Swims as he sings it. I felt like this was one of the records that I should record. I just realized that if you take the first letter of every word of the title, it reads: STINK. That's pretty funny.",
@@ -920,6 +925,12 @@
       "image": "/images/music/homeBM.jpg"
     },
     {
+      "title": "How Am I Supposed To Live Without You",
+      "url": "music/bros/How Am I Supposed To Live Without You.mp3",
+      "description": "This was a song that my brother and I did at his dinner table. This one was a little high, but I think we did a pretty good job.",
+      "image": "/images/music/HAMISLWY.jpg"
+    },
+    {
       "title": "Only A Lifetime (bros)",
       "url": "/music/bros/Only A Lifetime (bros).mp3",
       "description": "We did this one as kind of an after thought. I just had my brothers come in to my home studio and we just recorded the leads. I really like this song and recorded it myself. I thought that it would be a good song for the three of us to do together. ",
@@ -947,6 +958,12 @@
       "url": "/music/bros/Just You And I.mp3",
       "description": "This was another one that my middle brother did. This one is also a duet with the girl's vocals in the track already. ",
       "images": "/images/music/justYouAndI.jpg"
+    },
+    {
+      "title": "Leave The Door Open",
+      "url": "/music/bros/Leave The Door Open.mp3",
+      "description": "This was another song that my middle brother and I did at his dinner table. Good times.",
+      "image": "/images/music/leaveTheDoorOpen.jpg"
     },
     {
       "title": "Lucky",

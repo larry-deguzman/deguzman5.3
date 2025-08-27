@@ -17,6 +17,7 @@ export default function Email({ width, click }: Props) {
   return (
     <Box
       onClick={click}
+      cursor="pointer"
       style={{
         display: "block",
         width: width,
