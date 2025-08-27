@@ -22,6 +22,7 @@ import { sortPlaylistByFolder, shuffleArray } from "../utils/Utilities";
 import "../css/Universal.css";
 import AudioFolderHolder from "../component/AudioFolderHolder";
 import { usePlaylist } from "../hooks/Playlist";
+import Theme from "../theme/Theme";
 
 type Props = {
   callback: (data: AudioData) => void;
@@ -35,9 +36,10 @@ const AudioPage = ({ callback }: Props) => {
     BY_FOLDER: "byFolder",
   };
   const [sortType, setSortType] = useState<string>(TYPE.NORMAL);
-
   const { playlist } = usePlaylist();
   const prime = useColorContext() as ColorKey;
+  const lightest = Theme().colors[prime].lightest;
+
   const location = useLocation();
   const navigate = useNavigate();
   const info = location.state as UpdatePageProps;
@@ -105,11 +107,11 @@ const AudioPage = ({ callback }: Props) => {
                   setSortType(TYPE.NORMAL);
                 }}
               >
-                <MdOutlineWidthNormal />
-                &nbsp;Normal
+                <MdOutlineWidthNormal color={lightest} />
+                <Text color={lightest}>&nbsp;Normal</Text>
               </Button>
               {(sortType !== TYPE.SHUFFLE || sortType !== TYPE.BY_FOLDER) && (
-                <Text> • </Text>
+                <Text color={lightest}> • </Text>
               )}
             </>
           )}
@@ -122,8 +124,8 @@ const AudioPage = ({ callback }: Props) => {
                   setSortType(TYPE.SHUFFLE);
                 }}
               >
-                <FaShuffle />
-                &nbsp; Shuffle
+                <FaShuffle color={lightest} />
+                <Text color={lightest}>&nbsp; Shuffle</Text>
               </Button>
               {sortType !== TYPE.BY_FOLDER && <Text> • </Text>}
             </>
@@ -135,8 +137,8 @@ const AudioPage = ({ callback }: Props) => {
                 setSortType(TYPE.BY_FOLDER);
               }}
             >
-              <FaFolderOpen />
-              &nbsp; Age/Type
+              <FaFolderOpen color={lightest} />
+              <Text color={lightest}>&nbsp; Age/Type</Text>
             </Button>
           )}
         </HStack>
