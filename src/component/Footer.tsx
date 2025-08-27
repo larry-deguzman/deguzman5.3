@@ -2,14 +2,21 @@ import { Box, Text, HStack } from "@chakra-ui/react";
 
 import { useWindowWidth } from "../utils/Utilities";
 
+import { useColorContext } from "../context/Color";
+import Theme from "../theme/Theme";
+
 import Linkedin from "../graphics/Linkedin";
 import Email from "../graphics/Email";
 
 type Props = {
   showingAudio: boolean;
 };
+type ColorKey = keyof ReturnType<typeof Theme>["colors"];
 
 const Footer = ({ showingAudio }: Props) => {
+  const prime = useColorContext() as ColorKey;
+  const lightest = Theme().colors[prime].lightest;
+
   const linkedinClick = () => {
     window.open("https://www.linkedin.com/in/larrydeguzman/", "_blank");
   };
@@ -52,7 +59,9 @@ const Footer = ({ showingAudio }: Props) => {
         display="flex"
         paddingBottom={getPadding()}
       >
-        <Text fontSize={12}>© 2025 DEGUZMAN5.com All rights reserved.</Text>
+        <Text userSelect="none" fontSize={12} color={lightest}>
+          © 2025 DEGUZMAN5.com All rights reserved.
+        </Text>
       </Box>
     </>
   );
