@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { lazy, Suspense, useRef, useState } from "react";
 import { Box } from "@chakra-ui/react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
@@ -18,6 +18,7 @@ import UpperNavigation from "./component/UpperNavigation";
 import Main from "./pages/Main";
 import UpperBumper from "./component/UpperBumper";
 import Footer from "./component/Footer";
+import HiddenCounter from "./component/HiddenCounter";
 
 import type {
   UpdatePageProps,
@@ -25,17 +26,20 @@ import type {
   AudioData,
 } from "./types/GenericTypes";
 
-import UpdatePage from "./component/UpdatePage";
-import VideosPage from "./pages/VideosPage";
-import AudioPage from "./pages/AudioPage";
-import DynamicWebpageImage from "./pages/DynamicWebpageImage";
-import VideoMonitoring from "./pages/VideoMonitoring";
-import SystemVideoMonitoring from "./pages/SystemVideoMonitoring";
-import MyTechJourney from "./pages/MyTechJourney";
-import Yahoo from "./pages/Yahoo";
 import AudioPlayer from "./elements/AudioPlayer";
 import AudioPlayList from "./elements/AudioPlayer/AudioPlayList";
-import Apex from "./pages/Apex";
+
+const UpdatePage = lazy(() => import("./component/UpdatePage"));
+const VideosPage = lazy(() => import("./pages/VideosPage"));
+const AudioPage = lazy(() => import("./pages/AudioPage"));
+const DynamicWebpageImage = lazy(() => import("./pages/DynamicWebpageImage"));
+const VideoMonitoring = lazy(() => import("./pages/VideoMonitoring"));
+const SystemVideoMonitoring = lazy(
+  () => import("./pages/SystemVideoMonitoring"),
+);
+const MyTechJourney = lazy(() => import("./pages/MyTechJourney"));
+const Yahoo = lazy(() => import("./pages/Yahoo"));
+const Apex = lazy(() => import("./pages/Apex"));
 
 // import { shuffleArray } from "./utils/Utilities";
 
@@ -333,33 +337,35 @@ function App() {
       >
         <UpperNavigation />
         <UpperBumper />
-        <Routes>
-          <Route
-            path="/"
-            element={<Main data={data} callback={callbackFromMain} />}
-          />
-          <Route path="/updatePage" element={<UpdatePage />} />
-          <Route
-            path="/videos"
-            element={<VideosPage callback={videoPageCallback} />}
-          />
-          <Route
-            path="/audio"
-            element={<AudioPage callback={audioCallback} />}
-          />
-          <Route path="yahoo" element={<Yahoo />} />
-          <Route
-            path="/dynamicWebpageImage"
-            element={<DynamicWebpageImage />}
-          />
-          <Route path="/videoMonitoring" element={<VideoMonitoring />} />
-          <Route
-            path="/systemVideoMonitoring"
-            element={<SystemVideoMonitoring />}
-          />
-          <Route path="/apex" element={<Apex />} />
-          <Route path="/myTechJourney" element={<MyTechJourney />} />
-        </Routes>
+        <Suspense fallback={null}>
+          <Routes>
+            <Route
+              path="/"
+              element={<Main data={data} callback={callbackFromMain} />}
+            />
+            <Route path="/updatePage" element={<UpdatePage />} />
+            <Route
+              path="/videos"
+              element={<VideosPage callback={videoPageCallback} />}
+            />
+            <Route
+              path="/audio"
+              element={<AudioPage callback={audioCallback} />}
+            />
+            <Route path="yahoo" element={<Yahoo />} />
+            <Route
+              path="/dynamicWebpageImage"
+              element={<DynamicWebpageImage />}
+            />
+            <Route path="/videoMonitoring" element={<VideoMonitoring />} />
+            <Route
+              path="/systemVideoMonitoring"
+              element={<SystemVideoMonitoring />}
+            />
+            <Route path="/apex" element={<Apex />} />
+            <Route path="/myTechJourney" element={<MyTechJourney />} />
+          </Routes>
+        </Suspense>
         <Footer showingAudio={currentSong !== null} />
         {currentSong && (
           <>
@@ -372,6 +378,7 @@ function App() {
         )}
 
         {/* I think this is where the audio player should go */}
+        <HiddenCounter />
       </Box>
     </>
   );
